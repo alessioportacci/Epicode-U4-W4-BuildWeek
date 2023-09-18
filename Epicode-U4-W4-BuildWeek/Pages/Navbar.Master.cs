@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Epicode_U4_W4_BuildWeek
+namespace Epicode_U4_W4_BuildWeek.Pages
 {
-    public partial class _Default : Page
+    public partial class Navbar : System.Web.UI.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {
