@@ -58,13 +58,12 @@ namespace Epicode_U4_W4_BuildWeek
                     FormsAuthenticationTicket authTicket = FormsAuthentication.Decrypt(authCookie.Value);
 
                     //Mi preparo una lista con i ruoli (e' solo admin nel caso)
-                    string[] roles = { authTicket.UserData };
+                    string[] ruoli = { authTicket.UserData };
 
                     //Aggiungiamo al Context User i ruoli
-                    Context.User = new GenericPrincipal(Context.User.Identity, roles);
+                    Context.User = new GenericPrincipal(Context.User.Identity, ruoli);
                 }
             }
-
         }
     }
 }
