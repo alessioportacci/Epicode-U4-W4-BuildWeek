@@ -7,20 +7,11 @@
 // </generato automaticamente>
 //------------------------------------------------------------------------------
 
-namespace Epicode_U4_W4_BuildWeek.Pages.Main
+namespace Epicode_U4_W4_BuildWeek.Pages.Main.Admin
 {
 
 
-    public partial class Default
+    public partial class Admin
     {
-
-        /// <summary>
-        /// Controllo Repeater1.
-        /// </summary>
-        /// <remarks>
-        /// Campo generato automaticamente.
-        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater Repeater1;
     }
 }
