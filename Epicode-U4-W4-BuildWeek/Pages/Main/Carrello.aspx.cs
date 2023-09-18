@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Configuration;
+using System.Data.SqlClient;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
@@ -15,7 +16,7 @@ namespace Epicode_U4_W4_BuildWeek.Pages.Main
         List<Prodotto> listaProdotti = new List<Prodotto>();
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack) 
+            if (!IsPostBack)
             {
                 string userId = Session["UserId"] as string;
                 double totaleCarrello = 0;
@@ -30,15 +31,15 @@ namespace Epicode_U4_W4_BuildWeek.Pages.Main
 
                     SqlCommand cmd = new SqlCommand(storedProcedure, conn);
 
-                
-                    cmd.Parameters.AddWithValue("@IdUtente", userId); 
+
+                    cmd.Parameters.AddWithValue("@IdUtente", userId);
 
                     cmd.CommandType = CommandType.StoredProcedure;
 
                     SqlDataReader reader = cmd.ExecuteReader();
 
-                    
-                   
+
+
                     while (reader.Read())
                     {
                         string titolo = reader["Titolo"].ToString();
@@ -49,11 +50,11 @@ namespace Epicode_U4_W4_BuildWeek.Pages.Main
                         totaleCarrello += prezzo;
                     }
 
-                   
+
                     repeaterItems.DataSource = listaProdotti;
                     repeaterItems.DataBind();
 
-                    Label1.Text =  totaleCarrello.ToString("C");
+                    Label1.Text = totaleCarrello.ToString("C");
 
                 }
                 catch (Exception ex)
@@ -89,17 +90,17 @@ namespace Epicode_U4_W4_BuildWeek.Pages.Main
                     SqlCommand cmd = new SqlCommand(sqlQuery, conn);
                     cmd.Parameters.AddWithValue("@IdUtente", userId);
 
-                   
+
                     cmd.ExecuteNonQuery();
 
-              
+
 
                     listaProdotti.Clear();
 
                     repeaterItems.DataSource = listaProdotti;
                     repeaterItems.DataBind();
 
-                    Label1.Text = "0"; 
+                    Label1.Text = "0";
                 }
                 catch (Exception ex)
                 {
@@ -118,9 +119,9 @@ namespace Epicode_U4_W4_BuildWeek.Pages.Main
         {
             public string Titolo { get; set; }
             public double Prezzo { get; set; }
-       
+
         }
-     
+
 
     }
 
