@@ -23,12 +23,17 @@ namespace Epicode_U4_W4_BuildWeek.Pages
             try
             {
                 conn.Open();
-                SqlDataReader sqlDataReader = new SqlCommand("SELECT Username, Password FROM T_Utenti", conn).ExecuteReader();
+                SqlDataReader sqlDataReader = new SqlCommand("SELECT Username, Password, IDUtente FROM T_Utenti", conn).ExecuteReader();
                 while (sqlDataReader.Read()) 
                 {
                     if(Username.Text == sqlDataReader["Username"].ToString() && Password.Text == sqlDataReader["Password"].ToString()) 
                     {
                         FormsAuthentication.SetAuthCookie(sqlDataReader["Username"].ToString(), true);
+
+                        string userId = sqlDataReader["IDUtente"].ToString();
+
+                        Session["UserId"] = userId;
+
                         Response.Redirect("./Main/Default.aspx");
                         break;
                     }
