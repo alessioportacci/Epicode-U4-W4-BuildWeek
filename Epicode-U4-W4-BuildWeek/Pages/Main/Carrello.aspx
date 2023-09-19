@@ -4,6 +4,8 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container mt-5">
+        <h1 id="nomeCognomeUtente" runat="server"></h1>
+
     <asp:Repeater ID="repeaterItems" runat="server">
         <ItemTemplate>
             <table class="table">
@@ -16,10 +18,12 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td><%# Eval("Titolo") %></td>
+                        <td><%# Eval("Titolo")  %></td>
+                        
                         <td>Prezzo: €<%# Eval("Prezzo", "{0:N2}") %></td>
                         <td>
-                          <asp:Button ID="btnRimuovi" runat="server" Text="Rimuovi" CssClass="btn btn-danger"  CommandArgument='<%# Container.ItemIndex %>' />
+                       <asp:Button ID="btnRimuovi" runat="server" Text="Rimuovi" CssClass="btn btn-danger" CommandName="RimuoviProdotto" CommandArgument='<%# Eval("IDCarrello") %>' OnClick="btnRimuovi_Click" />
+
 
                         </td>
                     </tr>
@@ -29,7 +33,7 @@
      
     </asp:Repeater>
            <FooterTemplate>
-       <table class="table table-bordered">
+       <table class="table table-bordered ">
            <tfoot>
                <tr>
                    <td colspan="2"><strong>Totale:</strong></td>
@@ -40,8 +44,8 @@
        </table>
    </FooterTemplate>
 <asp:Button ID="btnSvuotaCarrello" runat="server" Text="Svuota Carrello" CssClass="btn btn-danger" OnClick="btnSvuotaCarrello_Click" />
-
-    <a class="btn btn-success" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Concludi l'ordine</a>
+    
+    <a class="btn btn-success" href="#">Concludi l'ordine</a>
         </div>
-
+         <asp:Label ID="LabelIDCarrello" runat="server" Text=""></asp:Label>
 </asp:Content>
