@@ -30,7 +30,7 @@ namespace Epicode_U4_W4_BuildWeek.Pages
                     if(Username.Text == sqlDataReader["Username"].ToString() && Password.Text == sqlDataReader["Password"].ToString()) 
                     {
                         Session["UserID"] = sqlDataReader["IDUtente"];
-
+                      
                         //Se l'utente e un amministatore, ha un ruolo in piu' (admin)
                         string ruoli = string.Empty;
                         if (sqlDataReader["Amministratore"].ToString() == "True")
