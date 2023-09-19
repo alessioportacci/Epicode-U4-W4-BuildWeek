@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Pages/Navbar.Master" AutoEventWireup="true" CodeBehind="Carrello.aspx.cs" Inherits="Epicode_U4_W4_BuildWeek.Pages.Main.Carrello" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="../../Content/bootstrap.min.css" rel="stylesheet" />
 </asp:Content>
