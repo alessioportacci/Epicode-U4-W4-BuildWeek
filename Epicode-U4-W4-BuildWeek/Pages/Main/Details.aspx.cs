@@ -6,6 +6,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using WebGrease.Activities;
 
 namespace Epicode_U4_W4_BuildWeek.Pages.Main
 {
@@ -18,34 +19,47 @@ namespace Epicode_U4_W4_BuildWeek.Pages.Main
                 string connectionString = ConfigurationManager.ConnectionStrings["ConnectionDb"].ConnectionString.ToString();
                 SqlConnection conn = new SqlConnection(connectionString);
 
-                SqlCommand cmd = new SqlCommand("SELECT * FROM T_Libri WHERE IDLibro=@id", conn);
+                SqlCommand cmd = new SqlCommand("SELECT * FROM T_Libri WHERE IDLibro=IDLibro", conn);
                 cmd.Parameters.AddWithValue("id", Request.QueryString["IDLibro"]);
                 SqlDataReader sqlDataReader;
 
-                conn.Open();
-                sqlDataReader = cmd.ExecuteReader();
-
-                while (sqlDataReader.Read())
+                try
                 {
-                    string CopertinaLibro = sqlDataReader["Copertina"].ToString();
-                    string TitoloLibro = sqlDataReader["Titolo"].ToString(); 
-                    string DescrizioneLibro = sqlDataReader["Descrizione"].ToString();
-                    string AnnoPubblicazione = sqlDataReader["Anno"].ToString();
-                    string PrezzoLibro = sqlDataReader["Prezzo"].ToString();
-                    string AutoreLibro = sqlDataReader["Autore"].ToString();
-                    string GenereLibro = sqlDataReader["Genere"].ToString();
-                    string EditoreLibro = sqlDataReader["Editore"].ToString();
+                    conn.Open();
+                    sqlDataReader = cmd.ExecuteReader();
 
-                    DetailsImg.Src = "";
-                    DetailsTitle.InnerText = TitoloLibro;
-                    DetailsDate.InnerText = AnnoPubblicazione;
-                    DetailsGenre.InnerText = GenereLibro;
-                    DetailsDescription.InnerText = DescrizioneLibro;
-                    DetailsAuthor.InnerText = AutoreLibro;
-                    DetailsPublisher.InnerText = EditoreLibro;
+                    while (sqlDataReader.Read())
+                    {
+                        string CopertinaLibro = sqlDataReader["Copertina"].ToString();
+                        string TitoloLibro = sqlDataReader["Titolo"].ToString();
+                        string DescrizioneLibro = sqlDataReader["Descrizione"].ToString();
+                        string AnnoPubblicazione = sqlDataReader["Anno"].ToString();
+                        string PrezzoLibro = sqlDataReader["Prezzo"].ToString();
+                        string AutoreLibro = sqlDataReader["Autore"].ToString();
+                        string GenereLibro = sqlDataReader["Genere"].ToString();
+                        string EditoreLibro = sqlDataReader["Editore"].ToString();
+
+                        DetailsImg.Src = "";
+                        DetailsTitle.InnerText = TitoloLibro;
+                        DetailsDate.InnerText = AnnoPubblicazione;
+                        DetailsGenre.InnerText = GenereLibro;
+                        DetailsDescription.InnerText = DescrizioneLibro;
+                        DetailsAuthor.InnerText = AutoreLibro;
+                        DetailsPublisher.InnerText = EditoreLibro;
+
+
+                        break;
+                    }
                 }
-
-                conn.Close();
+                catch 
+                {
+                    Response.Write("Errore nel caricamento della pagina");
+                }
+                finally
+                {
+                    conn.Close();
+                }
+                
 
             }
         }
