@@ -5,13 +5,13 @@
 
        <div class="container">
 
-        <div class="row">
+        <div class="row g-2">
             <asp:Repeater ID="Repeater1" runat="server" ItemType="Epicode_U4_W4_BuildWeek.Pages.Main.Libri"  >
 
              <ItemTemplate>
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="../../Content/img/<%# Item.Copertina %>" class="card-img-top" alt="avatar">
+                <div class="col col-sm-12 col-md-6 col-lg-4 ">
+                    <div class="card" style="width: 18rem; height:100%">
+                        <img src="../../Content/img/<%# Item.Copertina %>" class="card-img-top" alt="avatar" style="height:300px">
                         <div class="card-body">
                         <h5 class="card-title"><%# Item.Titolo %></h5>
                         <p class="card-text"> <%# Item.Descrizione %></p>
@@ -22,7 +22,7 @@
                         <a href="dettagli.aspx?IDlibro=<%# Item.IDLibro %>" class="btn btn-success">Dettaglio</a>
                         </div>
                     </div>
-                
+                </div>
                  
             </ItemTemplate>
                   </asp:Repeater>
