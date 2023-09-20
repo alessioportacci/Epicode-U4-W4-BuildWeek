@@ -38,9 +38,9 @@ namespace Epicode_U4_W4_BuildWeek.Pages.Main
                 book.Descrizione = sqlDataReader["Descrizione"].ToString();
                 book.Anno = sqlDataReader["Anno"].ToString();
                 book.Prezzo = sqlDataReader["Prezzo"].ToString();
-                book.Autore = sqlDataReader["Autore"].ToString();
+                book.Autore = sqlDataReader["NomeAutore"].ToString();
                 book.Genere = sqlDataReader["Genere"].ToString();
-                book.Editore = sqlDataReader["Editore"].ToString();
+                book.Editore = sqlDataReader["NomeEditore"].ToString();
 
                 listalibri.Add(book);
 
