@@ -19,3 +19,84 @@ textarea {
         padding: 0;
     }
 }
+
+.home-carosello-top
+{
+    display:block;
+}
+
+.home-carosello-bg 
+{
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    background-image: url(../../Content/img/Backgrounds/1.jpg);
+}
+
+.btn-scopri 
+{
+    margin: auto;
+    display: block !important;
+    width: 10em;
+}
+
+.carosello-img
+{
+    height: 20vw !important;
+    min-height: 10em! important
+}
+
+.carosello-content
+{
+    width:auto;
+    border-bottom: 1px solid RGB(211,211,211);
+;
+}
+
+.shadow {
+    box-shadow: 5px 5px 14px -8px rgba(0,0,0,0.6);
+}
+
+.card-home
+{
+    border:none !important
+}
+
+.libro-redirect
+{
+    text-decoration:none;
+    color:black;
+}
+
+.editore-text
+{
+    font-size:smaller
+}
+
+.nostro-catalogo-text
+{
+    margin-left:-20px !important
+}
+
+.bg-gray {
+    background-color: #edf0f2;
+}
+
+.in-evidenza-text 
+{
+    font-size:14px
+}
+
+.imgConsigliato {
+}
+
+    .imgConsigliato:hover {
+        transform: scale(1.04);
+        box-shadow: 5px 5px 14px -8px rgba(0,0,0,0.6);
+    }
+
+.in-evidenza
+{
+    top:20px
+
+}
