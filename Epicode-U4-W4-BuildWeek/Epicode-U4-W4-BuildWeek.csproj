@@ -149,6 +149,7 @@
     <Content Include="Pages\Main\Ordine.aspx" />
     <Content Include="Pages\Main\Default.aspx" />
     <Content Include="Pages\Main\Details.aspx" />
+    <Content Include="Pages\Registrati.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -269,6 +270,13 @@
       <DependentUpon>Navbar.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Pages\Registrati.aspx.cs">
+      <DependentUpon>Registrati.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Registrati.aspx.designer.cs">
+      <DependentUpon>Registrati.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
