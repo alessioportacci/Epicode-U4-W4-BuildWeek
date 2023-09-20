@@ -19,8 +19,8 @@ namespace Epicode_U4_W4_BuildWeek.Pages.Main
                 string connectionString = ConfigurationManager.ConnectionStrings["ConnectionDb"].ConnectionString.ToString();
                 SqlConnection conn = new SqlConnection(connectionString);
 
-                SqlCommand cmd = new SqlCommand("SELECT * FROM T_Libri WHERE IDLibro=IDLibro", conn);
-                cmd.Parameters.AddWithValue("id", Request.QueryString["IDLibro"]);
+                SqlCommand cmd = new SqlCommand("SELECT * FROM V_Libri WHERE IDLibro=@IDLibro", conn);
+                cmd.Parameters.AddWithValue("IDLibro", Request.QueryString["IDLibro"]);
                 SqlDataReader sqlDataReader;
 
                 try
@@ -30,22 +30,22 @@ namespace Epicode_U4_W4_BuildWeek.Pages.Main
 
                     while (sqlDataReader.Read())
                     {
-                        string CopertinaLibro = sqlDataReader["Copertina"].ToString();
+                        DetailsImg.Src = "../../Content/img/Libri/" + sqlDataReader["Copertina"].ToString();
                         string TitoloLibro = sqlDataReader["Titolo"].ToString();
                         string DescrizioneLibro = sqlDataReader["Descrizione"].ToString();
                         string AnnoPubblicazione = sqlDataReader["Anno"].ToString();
                         string PrezzoLibro = sqlDataReader["Prezzo"].ToString();
-                        string AutoreLibro = sqlDataReader["Autore"].ToString();
+                        string AutoreLibro = sqlDataReader["NomeAutore"].ToString();
                         string GenereLibro = sqlDataReader["Genere"].ToString();
-                        string EditoreLibro = sqlDataReader["Editore"].ToString();
+                        string EditoreLibro = sqlDataReader["NomeEditore"].ToString();
 
-                        DetailsImg.Src = "";
-                        DetailsTitle.InnerText = TitoloLibro;
-                        DetailsDate.InnerText = AnnoPubblicazione;
-                        DetailsGenre.InnerText = GenereLibro;
-                        DetailsDescription.InnerText = DescrizioneLibro;
-                        DetailsAuthor.InnerText = AutoreLibro;
-                        DetailsPublisher.InnerText = EditoreLibro;
+                        //DetailsImg.Src = CopertinaLibro;
+                        //DetailsTitle.InnerText = TitoloLibro;
+                        //DetailsDate.Text = AnnoPubblicazione;
+                        //DetailsGenre.Text = GenereLibro;
+                        //DetailsDescription.Text = DescrizioneLibro;
+                        //DetailsAuthor.Text = AutoreLibro;
+                        //DetailsPublisher.Text = EditoreLibro;
 
 
                         break;

@@ -7,48 +7,12 @@
 // </generato automaticamente>
 //------------------------------------------------------------------------------
 
-namespace Epicode_U4_W4_BuildWeek.Pages
+namespace Epicode_U4_W4_BuildWeek.Pages.Main.Admin
 {
 
 
-    public partial class Navbar
+    public partial class Modifica
     {
-
-        /// <summary>
-        /// Controllo head.
-        /// </summary>
-        /// <remarks>
-        /// Campo generato automaticamente.
-        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
-
-        /// <summary>
-        /// Controllo form1.
-        /// </summary>
-        /// <remarks>
-        /// Campo generato automaticamente.
-        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-
-        /// <summary>
-        /// Controllo nomeCognomeUtente.
-        /// </summary>
-        /// <remarks>
-        /// Campo generato automaticamente.
-        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl nomeCognomeUtente;
-
-        /// <summary>
-        /// Controllo repeaterItems.
-        /// </summary>
-        /// <remarks>
-        /// Campo generato automaticamente.
-        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater repeaterItems;
 
         /// <summary>
         /// Controllo Label1.
@@ -60,39 +24,84 @@ namespace Epicode_U4_W4_BuildWeek.Pages
         protected global::System.Web.UI.WebControls.Label Label1;
 
         /// <summary>
-        /// Controllo btnSvuotaCarrello.
+        /// Controllo Titolo.
         /// </summary>
         /// <remarks>
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSvuotaCarrello;
+        protected global::System.Web.UI.WebControls.TextBox Titolo;
 
         /// <summary>
-        /// Controllo Button2.
+        /// Controllo FileUpload.
         /// </summary>
         /// <remarks>
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button2;
+        protected global::System.Web.UI.WebControls.FileUpload FileUpload;
 
         /// <summary>
-        /// Controllo LabelIDCarrello.
+        /// Controllo Descrizione.
         /// </summary>
         /// <remarks>
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelIDCarrello;
+        protected global::System.Web.UI.WebControls.TextBox Descrizione;
 
         /// <summary>
-        /// Controllo ContentPlaceHolder1.
+        /// Controllo Anno.
         /// </summary>
         /// <remarks>
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
+        protected global::System.Web.UI.WebControls.TextBox Anno;
+
+        /// <summary>
+        /// Controllo Prezzo.
+        /// </summary>
+        /// <remarks>
+        /// Campo generato automaticamente.
+        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Prezzo;
+
+        /// <summary>
+        /// Controllo Autori.
+        /// </summary>
+        /// <remarks>
+        /// Campo generato automaticamente.
+        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList Autori;
+
+        /// <summary>
+        /// Controllo Generi.
+        /// </summary>
+        /// <remarks>
+        /// Campo generato automaticamente.
+        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList Generi;
+
+        /// <summary>
+        /// Controllo Editori.
+        /// </summary>
+        /// <remarks>
+        /// Campo generato automaticamente.
+        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList Editori;
+
+        /// <summary>
+        /// Controllo Aggiungi.
+        /// </summary>
+        /// <remarks>
+        /// Campo generato automaticamente.
+        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Aggiungi;
     }
 }

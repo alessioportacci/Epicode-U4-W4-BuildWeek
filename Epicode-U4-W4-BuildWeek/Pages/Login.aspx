@@ -26,8 +26,9 @@
                 <asp:Label ID="Label2" runat="server" CssClass="form-label"  Text="Password"></asp:Label>
                 <asp:TextBox ID="Password" TextMode="Password" runat="server" CssClass="form-control mb-3"></asp:TextBox>
                 <asp:Button ID="LoginButton" runat="server" Text="Login" CssClass="btn btn-outline-success" OnClick="LoginSend" />
+                <a href="Registrati.aspx" class="btn btn-outline-primary" runat="server" >Registrati</a>
             </div>
-        </div>
+        </div> 
     </form>
 </body>
 </html>
