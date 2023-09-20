@@ -35,9 +35,9 @@ namespace Epicode_U4_W4_BuildWeek.Pages.Main
                         string DescrizioneLibro = sqlDataReader["Descrizione"].ToString();
                         string AnnoPubblicazione = sqlDataReader["Anno"].ToString();
                         string PrezzoLibro = sqlDataReader["Prezzo"].ToString();
-                        string AutoreLibro = sqlDataReader["Autore"].ToString();
-                        string GenereLibro = sqlDataReader["Genere"].ToString();
-                        string EditoreLibro = sqlDataReader["Editore"].ToString();
+                        string AutoreLibro = sqlDataReader["FkAutore"].ToString();
+                        string GenereLibro = sqlDataReader["FkGenere"].ToString();
+                        string EditoreLibro = sqlDataReader["FkEditore"].ToString();
 
                         DetailsImg.Src = "";
                         DetailsTitle.InnerText = TitoloLibro;
