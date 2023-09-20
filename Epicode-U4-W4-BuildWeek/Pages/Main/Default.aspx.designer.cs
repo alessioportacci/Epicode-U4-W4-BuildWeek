@@ -159,49 +159,49 @@ namespace Epicode_U4_W4_BuildWeek.Pages.Main
         protected global::System.Web.UI.HtmlControls.HtmlAnchor CaroselloUrl3;
 
         /// <summary>
-        /// Controllo consigliatoUrl.
+        /// Controllo evidenzaUrl.
         /// </summary>
         /// <remarks>
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor consigliatoUrl;
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor evidenzaUrl;
 
         /// <summary>
-        /// Controllo ConsigliatoImg.
+        /// Controllo evidenzaImg.
         /// </summary>
         /// <remarks>
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlImage ConsigliatoImg;
+        protected global::System.Web.UI.HtmlControls.HtmlImage evidenzaImg;
 
         /// <summary>
-        /// Controllo consigliatoTitolo.
+        /// Controllo evidenzaTitolo.
         /// </summary>
         /// <remarks>
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl consigliatoTitolo;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl evidenzaTitolo;
 
         /// <summary>
-        /// Controllo consigliatoAutore.
+        /// Controllo evidenzaAutore.
         /// </summary>
         /// <remarks>
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl consigliatoAutore;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl evidenzaAutore;
 
         /// <summary>
-        /// Controllo consigliatoDescrizione.
+        /// Controllo evidenzaDescrizione.
         /// </summary>
         /// <remarks>
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl consigliatoDescrizione;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl evidenzaDescrizione;
 
         /// <summary>
         /// Controllo Repeater1.
