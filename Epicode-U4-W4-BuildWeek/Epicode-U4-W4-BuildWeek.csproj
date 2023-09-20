@@ -118,8 +118,28 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
-    <Content Include="Content\img\anelli.jpg" />
-    <Content Include="Content\img\sposi.jpg" />
+    <Content Include="Content\img\Libri\1984.jpg" />
+    <Content Include="Content\img\Libri\19842.jpg" />
+    <Content Include="Content\img\Libri\Dracula.jpg" />
+    <Content Include="Content\img\Libri\Dracula2.jpg" />
+    <Content Include="Content\img\Libri\IFigliDiHurin.jpg" />
+    <Content Include="Content\img\Libri\IFigliDiHurin2.jpg" />
+    <Content Include="Content\img\Libri\IGialliDiEdgar AllanPoe.jpg" />
+    <Content Include="Content\img\Libri\IGialliDiEdgar AllanPoe2.jpg" />
+    <Content Include="Content\img\Libri\IlSignoreDegliAnelli.jpg" />
+    <Content Include="Content\img\Libri\IlSignoreDegliAnelli2.jpg" />
+    <Content Include="Content\img\Libri\IlSilmarillion.jpg" />
+    <Content Include="Content\img\Libri\IlSilmarillion2.jpg" />
+    <Content Include="Content\img\Libri\LaFattoriaDegliAnimali.jpg" />
+    <Content Include="Content\img\Libri\LaFattoriaDegliAnimali2.jpg" />
+    <Content Include="Content\img\Libri\LoHobbit.jpg" />
+    <Content Include="Content\img\Libri\LoHobbit2.jpg" />
+    <Content Include="Content\img\Libri\ParadisiProibiti.jpg" />
+    <Content Include="Content\img\Libri\ParadisiProibiti2.jpg" />
+    <Content Include="Content\img\Libri\PitturaOlandese.jpg" />
+    <Content Include="Content\img\Libri\RetroGenerico.jpg" />
+    <Content Include="Content\img\Libri\Vermeer.jpg" />
+    <Content Include="Content\img\Libri\Vermeer2.jpg" />
     <Content Include="Content\Site.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
@@ -128,6 +148,7 @@
     <Content Include="Pages\Main\Admin\AggiungiProdotto.aspx" />
     <Content Include="Pages\Main\Ordine.aspx" />
     <Content Include="Pages\Main\Default.aspx" />
+    <Content Include="Pages\Main\Details.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -232,6 +253,13 @@
     </Compile>
     <Compile Include="Pages\Main\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Main\Details.aspx.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Main\Details.aspx.designer.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Navbar.Master.cs">
       <DependentUpon>Navbar.Master</DependentUpon>
