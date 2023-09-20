@@ -29,7 +29,7 @@ namespace Epicode_U4_W4_BuildWeek.Pages.Main
                     sqlDataReader = cmd.ExecuteReader();
 
                     while (sqlDataReader.Read())
-                    {
+                    { 
                         string CopertinaLibro = sqlDataReader["Copertina"].ToString();
                         string TitoloLibro = sqlDataReader["Titolo"].ToString();
                         string DescrizioneLibro = sqlDataReader["Descrizione"].ToString();
@@ -39,7 +39,7 @@ namespace Epicode_U4_W4_BuildWeek.Pages.Main
                         string GenereLibro = sqlDataReader["FkGenere"].ToString();
                         string EditoreLibro = sqlDataReader["FkEditore"].ToString();
 
-                        DetailsImg.Src = "";
+                        DetailsImg.Src = CopertinaLibro;
                         DetailsTitle.InnerText = TitoloLibro;
                         //DetailsDate.Text = AnnoPubblicazione;
                         //DetailsGenre.Text = GenereLibro;
