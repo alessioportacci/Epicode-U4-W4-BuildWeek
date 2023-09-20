@@ -19,3 +19,22 @@ textarea {
         padding: 0;
     }
 }
+
+.home-carosello-top
+{
+    height:60vw;
+    display:block;
+}
+
+.home-carosello-bg {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../../Content/img/Backgrounds/1.jpg)
+}
+
+.btn-scopri 
+{
+    margin: auto;
+    display: block !important;
+    width: 10em;
+}
