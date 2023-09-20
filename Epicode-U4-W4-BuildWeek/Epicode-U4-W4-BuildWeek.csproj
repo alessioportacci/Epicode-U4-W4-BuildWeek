@@ -148,6 +148,7 @@
     <Content Include="Pages\Login.aspx" />
     <Content Include="Pages\Main\Admin\Admin.aspx" />
     <Content Include="Pages\Main\Admin\AggiungiProdotto.aspx" />
+    <Content Include="Pages\Main\Admin\Modifica.aspx" />
     <Content Include="Pages\Main\Ordine.aspx" />
     <Content Include="Pages\Main\Default.aspx" />
     <Content Include="Pages\Main\Details.aspx" />
@@ -243,6 +244,13 @@
     </Compile>
     <Compile Include="Pages\Main\Admin\AggiungiProdotto.aspx.designer.cs">
       <DependentUpon>AggiungiProdotto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Main\Admin\Modifica.aspx.cs">
+      <DependentUpon>Modifica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Main\Admin\Modifica.aspx.designer.cs">
+      <DependentUpon>Modifica.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Main\Ordine.aspx.cs">
       <DependentUpon>Ordine.aspx</DependentUpon>
