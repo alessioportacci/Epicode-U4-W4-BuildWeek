@@ -7,65 +7,83 @@
 // </generato automaticamente>
 //------------------------------------------------------------------------------
 
-namespace Epicode_U4_W4_BuildWeek.Pages
+namespace Epicode_U4_W4_BuildWeek.Pages.Main
 {
 
 
-    public partial class Login
+    public partial class Details
     {
 
         /// <summary>
-        /// Controllo form1.
+        /// Controllo DetailsImg.
         /// </summary>
         /// <remarks>
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.HtmlControls.HtmlImage DetailsImg;
 
         /// <summary>
-        /// Controllo Label1.
+        /// Controllo DetailsTitle.
         /// </summary>
         /// <remarks>
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl DetailsTitle;
 
         /// <summary>
-        /// Controllo Username.
+        /// Controllo DetailsDate.
         /// </summary>
         /// <remarks>
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Username;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl DetailsDate;
 
         /// <summary>
-        /// Controllo Label2.
+        /// Controllo LinkButton1.
         /// </summary>
         /// <remarks>
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
+        protected global::System.Web.UI.WebControls.LinkButton LinkButton1;
 
         /// <summary>
-        /// Controllo Password.
+        /// Controllo DetailsGenre.
         /// </summary>
         /// <remarks>
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Password;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl DetailsGenre;
 
         /// <summary>
-        /// Controllo LoginButton.
+        /// Controllo DetailsDescription.
         /// </summary>
         /// <remarks>
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button LoginButton;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl DetailsDescription;
+
+        /// <summary>
+        /// Controllo DetailsAuthor.
+        /// </summary>
+        /// <remarks>
+        /// Campo generato automaticamente.
+        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl DetailsAuthor;
+
+        /// <summary>
+        /// Controllo DetailsPublisher.
+        /// </summary>
+        /// <remarks>
+        /// Campo generato automaticamente.
+        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl DetailsPublisher;
     }
 }

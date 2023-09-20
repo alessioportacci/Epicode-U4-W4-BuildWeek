@@ -15,6 +15,15 @@ namespace Epicode_U4_W4_BuildWeek.Pages.Main
     {
 
         /// <summary>
+        /// Controllo nomeCognomeUtente.
+        /// </summary>
+        /// <remarks>
+        /// Campo generato automaticamente.
+        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl nomeCognomeUtente;
+
+        /// <summary>
         /// Controllo repeaterItems.
         /// </summary>
         /// <remarks>
@@ -40,5 +49,14 @@ namespace Epicode_U4_W4_BuildWeek.Pages.Main
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnSvuotaCarrello;
+
+        /// <summary>
+        /// Controllo LabelIDCarrello.
+        /// </summary>
+        /// <remarks>
+        /// Campo generato automaticamente.
+        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelIDCarrello;
     }
 }

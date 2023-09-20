@@ -17,7 +17,7 @@
                         <p class="card-text"> <%# Item.Descrizione %></p>
                          <p class="card-text"> <%# Item.Anno %></p>
                           
-                        <p class="card-text"> <%# Item.Prezzo %></p>
+                                <p class="card-text"> <%# Item.Prezzo %></p>
                        
                         <a href="Details.aspx?IDlibro=<%# Item.IDLibro %>" class="btn btn-success">Dettaglio</a>
                         </div>
@@ -29,8 +29,5 @@
                 </div>
           
            </div>
-
-          
-
 
 </asp:Content>

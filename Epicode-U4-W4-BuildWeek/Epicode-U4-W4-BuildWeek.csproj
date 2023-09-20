@@ -123,8 +123,10 @@
     <Content Include="Global.asax" />
     <Content Include="Pages\Login.aspx" />
     <Content Include="Pages\Main\Admin\Admin.aspx" />
+    <Content Include="Pages\Main\Admin\AggiungiProdotto.aspx" />
     <Content Include="Pages\Main\Carrello.aspx" />
     <Content Include="Pages\Main\Default.aspx" />
+    <Content Include="Pages\Main\Details.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -189,6 +191,9 @@
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Classes\Autori.cs" />
+    <Compile Include="Classes\Editori.cs" />
+    <Compile Include="Classes\Generi.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -206,6 +211,13 @@
     <Compile Include="Pages\Main\Admin\Admin.aspx.designer.cs">
       <DependentUpon>Admin.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Main\Admin\AggiungiProdotto.aspx.cs">
+      <DependentUpon>AggiungiProdotto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Main\Admin\AggiungiProdotto.aspx.designer.cs">
+      <DependentUpon>AggiungiProdotto.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Main\Carrello.aspx.cs">
       <DependentUpon>Carrello.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -219,6 +231,13 @@
     </Compile>
     <Compile Include="Pages\Main\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Main\Details.aspx.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Main\Details.aspx.designer.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Navbar.Master.cs">
       <DependentUpon>Navbar.Master</DependentUpon>

@@ -2,4 +2,10 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
+<asp:Button ID="Button1" runat="server" Text="Button" />
+<asp:Button ID="Button2" runat="server" Text="Button" />
+<asp:Button ID="Button3" runat="server" Text="Button" />
+
 </asp:Content>
+
