@@ -10,7 +10,7 @@
 
              <ItemTemplate>
                 <div class="col col-sm-12 col-md-6 col-lg-4 ">
-                    <div class="card" style="width: 18rem; height:100%" >
+                    <div class="card" style="width: 18rem;  height:100%" >
                         <img src="../../Content/img/<%# Item.Copertina %>" class="card-img-top" alt="avatar" style="height:300px">
                         <div class="card-body">
                         <h5 class="card-title"><%# Item.Titolo %></h5>
