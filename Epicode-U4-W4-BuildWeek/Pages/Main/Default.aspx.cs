@@ -79,6 +79,14 @@ namespace Epicode_U4_W4_BuildWeek.Pages.Main
             CaroselloTitolo3.InnerText = libriList[index].Titolo.ToString();
             CaroselloImg3.Src = "../../Content/img/Libri/" + libriList[index].Copertina;
             CaroselloUrl3.HRef = "details.aspx?IdLibro=" + libriList[index].IDLibro;
+
+            index = rnd.Next(libriList.Count);
+            consigliatoTitolo.InnerText = libriList[index].Titolo;
+            consigliatoAutore.InnerText = libriList[index].Autore;
+            consigliatoDescrizione.InnerText = libriList[index].Descrizione;
+            ConsigliatoImg.Src = "../../Content/img/Libri/" + libriList[index].Copertina;
+            consigliatoUrl.HRef = "details.aspx?IdLibro=" + libriList[index].IDLibro;
+
         }
 
     }

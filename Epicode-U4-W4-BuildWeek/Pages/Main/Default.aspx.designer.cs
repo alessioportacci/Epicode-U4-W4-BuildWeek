@@ -159,6 +159,51 @@ namespace Epicode_U4_W4_BuildWeek.Pages.Main
         protected global::System.Web.UI.HtmlControls.HtmlAnchor CaroselloUrl3;
 
         /// <summary>
+        /// Controllo consigliatoUrl.
+        /// </summary>
+        /// <remarks>
+        /// Campo generato automaticamente.
+        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor consigliatoUrl;
+
+        /// <summary>
+        /// Controllo ConsigliatoImg.
+        /// </summary>
+        /// <remarks>
+        /// Campo generato automaticamente.
+        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlImage ConsigliatoImg;
+
+        /// <summary>
+        /// Controllo consigliatoTitolo.
+        /// </summary>
+        /// <remarks>
+        /// Campo generato automaticamente.
+        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl consigliatoTitolo;
+
+        /// <summary>
+        /// Controllo consigliatoAutore.
+        /// </summary>
+        /// <remarks>
+        /// Campo generato automaticamente.
+        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl consigliatoAutore;
+
+        /// <summary>
+        /// Controllo consigliatoDescrizione.
+        /// </summary>
+        /// <remarks>
+        /// Campo generato automaticamente.
+        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl consigliatoDescrizione;
+
+        /// <summary>
         /// Controllo Repeater1.
         /// </summary>
         /// <remarks>

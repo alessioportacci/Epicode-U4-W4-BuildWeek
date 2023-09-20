@@ -53,6 +53,10 @@ textarea {
 ;
 }
 
+.shadow {
+    box-shadow: 5px 5px 14px -8px rgba(0,0,0,0.6);
+}
+
 .card-home
 {
     border:none !important
@@ -67,4 +71,32 @@ textarea {
 .editore-text
 {
     font-size:smaller
+}
+
+.nostro-catalogo-text
+{
+    margin-left:-20px !important
+}
+
+.bg-gray {
+    background-color: #edf0f2;
+}
+
+.in-evidenza-text 
+{
+    font-size:14px
+}
+
+.imgConsigliato {
+}
+
+    .imgConsigliato:hover {
+        transform: scale(1.04);
+        box-shadow: 5px 5px 14px -8px rgba(0,0,0,0.6);
+    }
+
+.in-evidenza
+{
+    top:20px
+
 }
