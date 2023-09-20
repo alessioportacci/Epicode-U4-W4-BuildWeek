@@ -73,21 +73,85 @@
       </button>
     </div>
 
-    <!-- Consigliato -->
+    <!-- Quadratini -->
+
+      <div class="container my-5 mx-auto">
+        <div class="row row-cols-2 mx-auto shadow">
+            <div class="container bg-sand">
+                <h3 class="m-2">Il mondo dell'arte</h3>
+            </div>
+            <div class="container bg-blue">
+                <h3 class="m-2">Grandi autori fantasy</h3>
+
+                <div class="row row-cols-3 justify-content-center p-3">
+                    <div class="p-1">
+                           <div class="card card-home  mx-auto" style="width: 10rem;">
+                               <img src="../../Content/img/Libri/Dracula.jpg" class="card-img-top" alt="avatar" height="230">
+                               <div class="card-body">
+                                   <p class="text-truncate text-secondary m-0">Fracula</p>
+                                   <a href="Details.aspx?IdLibro =1" class="libro-redirect">
+                                       <h5 class="card-title"> 
+                                           <i class="bi bi-arrow-right-circle-fill"></i> 
+                                           Dracula
+                                       </h5>
+                                   </a>
+                                   <p class="text-secondary editore-text"> Dracula</p>
+                               </div>
+                            </div>
+                    </div>
+                    <div class="p-1">
+                           <div class="card card-home  mx-auto" style="width: 10rem;">
+                               <img src="../../Content/img/Libri/Dracula.jpg" class="card-img-top" alt="avatar" height="230">
+                               <div class="card-body">
+                                   <p class="text-truncate text-secondary m-0">Fracula</p>
+                                   <a href="Details.aspx?IdLibro =1" class="libro-redirect">
+                                       <h5 class="card-title"> 
+                                           <i class="bi bi-arrow-right-circle-fill"></i> 
+                                           Dracula
+                                       </h5>
+                                   </a>
+                                   <p class="text-secondary editore-text"> Dracula</p>
+                               </div>
+                            </div>
+                    </div>
+                    <div class="p-1">
+                           <div class="card card-home  mx-auto" style="width: 10rem;">
+                               <img src="../../Content/img/Libri/Dracula.jpg" class="card-img-top" alt="avatar" height="230">
+                               <div class="card-body">
+                                   <p class="text-truncate text-secondary m-0">Fracula</p>
+                                   <a href="Details.aspx?IdLibro =1" class="libro-redirect">
+                                       <h5 class="card-title"> 
+                                           <i class="bi bi-arrow-right-circle-fill"></i> 
+                                           Dracula
+                                       </h5>
+                                   </a>
+                                   <p class="text-secondary editore-text"> Dracula</p>
+                               </div>
+                            </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>          
+      </div>
+
+
+    <!-- In evidenza -->
 
     <div class="container my-5 mx-auto p-4 bg-gray shadow in-evidenza">
         <p class="in-evidenza-text text-end"> ⭐ in evidenza</p>
         <div class="row row-cols-1 row-cols-md-2 justify-content-evenly align-items-center ">
 
             <div class="text-center">
-                <a id="consigliatoUrl" runat="server">
-                    <img id="ConsigliatoImg" runat="server" src="../../Content/img/Libri/Dracula.jpg" height="500" class="mx-auto imgConsigliato" />
+                <a id="evidenzaUrl" runat="server">
+                    <img id="evidenzaImg" runat="server" src="../../Content/img/Libri/Dracula.jpg" height="500" class="mx-auto imgConsigliato" />
                 </a>
             </div>
             <div>
-                <h2 id="consigliatoTitolo" runat="server" class="mt-5">Titolo</h2>
-                <p id="consigliatoAutore" runat="server" class="text-truncate text-secondary m-0">Autore</p>
-                <p id="consigliatoDescrizione" runat="server" class="p-4"> Descrizione</p>
+                <h2 id="evidenzaTitolo" runat="server" class="mt-5">Titolo</h2>
+                <p id="evidenzaAutore" runat="server" class="text-truncate text-secondary m-0">Autore</p>
+                <p id="evidenzaDescrizione" runat="server" class="p-4"> Descrizione</p>
             </div>
         </div>
 

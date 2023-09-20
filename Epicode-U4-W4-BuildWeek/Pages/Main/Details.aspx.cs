@@ -19,7 +19,7 @@ namespace Epicode_U4_W4_BuildWeek.Pages.Main
                 string connectionString = ConfigurationManager.ConnectionStrings["ConnectionDb"].ConnectionString.ToString();
                 SqlConnection conn = new SqlConnection(connectionString);
 
-                SqlCommand cmd = new SqlCommand("SELECT * FROM T_Libri WHERE IDLibro=@IDLibro", conn);
+                SqlCommand cmd = new SqlCommand("SELECT * FROM V_Libri WHERE IDLibro=@IDLibro", conn);
                 cmd.Parameters.AddWithValue("IDLibro", Request.QueryString["IDLibro"]);
                 SqlDataReader sqlDataReader;
 
@@ -29,18 +29,18 @@ namespace Epicode_U4_W4_BuildWeek.Pages.Main
                     sqlDataReader = cmd.ExecuteReader();
 
                     while (sqlDataReader.Read())
-                    { 
-                        string CopertinaLibro = sqlDataReader["Copertina"].ToString();
+                    {
+                        DetailsImg.Src = "../../Content/img/Libri/" + sqlDataReader["Copertina"].ToString();
                         string TitoloLibro = sqlDataReader["Titolo"].ToString();
                         string DescrizioneLibro = sqlDataReader["Descrizione"].ToString();
                         string AnnoPubblicazione = sqlDataReader["Anno"].ToString();
                         string PrezzoLibro = sqlDataReader["Prezzo"].ToString();
-                        string AutoreLibro = sqlDataReader["FkAutore"].ToString();
-                        string GenereLibro = sqlDataReader["FkGenere"].ToString();
-                        string EditoreLibro = sqlDataReader["FkEditore"].ToString();
+                        string AutoreLibro = sqlDataReader["NomeAutore"].ToString();
+                        string GenereLibro = sqlDataReader["Genere"].ToString();
+                        string EditoreLibro = sqlDataReader["NomeEditore"].ToString();
 
-                        DetailsImg.Src = CopertinaLibro;
-                        DetailsTitle.InnerText = TitoloLibro;
+                        //DetailsImg.Src = CopertinaLibro;
+                        //DetailsTitle.InnerText = TitoloLibro;
                         //DetailsDate.Text = AnnoPubblicazione;
                         //DetailsGenre.Text = GenereLibro;
                         //DetailsDescription.Text = DescrizioneLibro;
