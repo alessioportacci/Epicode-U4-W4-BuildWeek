@@ -86,7 +86,8 @@
 
         <h1 id="nomeCognomeUtente" runat="server"></h1>
         <h2>Stiamo Processando il tuo Ordine ... </h2>
-        
+        <a  href="Default.aspx" class=" text-decoration-none text-light fs-4 ">Torna alla home</a>
+       
     </div>
 
 
