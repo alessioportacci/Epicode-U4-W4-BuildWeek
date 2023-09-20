@@ -19,8 +19,8 @@ namespace Epicode_U4_W4_BuildWeek.Pages.Main
                 string connectionString = ConfigurationManager.ConnectionStrings["ConnectionDb"].ConnectionString.ToString();
                 SqlConnection conn = new SqlConnection(connectionString);
 
-                SqlCommand cmd = new SqlCommand("SELECT * FROM T_Libri WHERE IDLibro=IDLibro", conn);
-                cmd.Parameters.AddWithValue("id", Request.QueryString["IDLibro"]);
+                SqlCommand cmd = new SqlCommand("SELECT * FROM T_Libri WHERE IDLibro=@IDLibro", conn);
+                cmd.Parameters.AddWithValue("IDLibro", Request.QueryString["IDLibro"]);
                 SqlDataReader sqlDataReader;
 
                 try
@@ -41,11 +41,11 @@ namespace Epicode_U4_W4_BuildWeek.Pages.Main
 
                         DetailsImg.Src = "";
                         DetailsTitle.InnerText = TitoloLibro;
-                        DetailsDate.InnerText = AnnoPubblicazione;
-                        DetailsGenre.InnerText = GenereLibro;
-                        DetailsDescription.InnerText = DescrizioneLibro;
-                        DetailsAuthor.InnerText = AutoreLibro;
-                        DetailsPublisher.InnerText = EditoreLibro;
+                        //DetailsDate.Text = AnnoPubblicazione;
+                        //DetailsGenre.Text = GenereLibro;
+                        //DetailsDescription.Text = DescrizioneLibro;
+                        //DetailsAuthor.Text = AutoreLibro;
+                        //DetailsPublisher.Text = EditoreLibro;
 
 
                         break;
