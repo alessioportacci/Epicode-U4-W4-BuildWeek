@@ -3,12 +3,12 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container">
-<div class="h-50">
+<div class="">
     <div class="">
-    <div class="card mb-3" style="">
+    <div class="card" style="">
         <div class="row g-0">
             <div class="col-md-4">
-                <img id="DetailsImg" src="http://placekitten.com/500" class="img-fluid rounded-start p-2" alt="..." runat="server">
+                <img id="DetailsImg" src="http://placekitten.com/500" class="card-img-top p-2" alt="..." runat="server">
             </div>
             <div class="col-md-8">
                 <div class="card-body">

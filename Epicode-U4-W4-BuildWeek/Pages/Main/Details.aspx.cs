@@ -39,13 +39,12 @@ namespace Epicode_U4_W4_BuildWeek.Pages.Main
                         string GenereLibro = sqlDataReader["Genere"].ToString();
                         string EditoreLibro = sqlDataReader["NomeEditore"].ToString();
 
-                        //DetailsImg.Src = CopertinaLibro;
-                        //DetailsTitle.InnerText = TitoloLibro;
-                        //DetailsDate.Text = AnnoPubblicazione;
-                        //DetailsGenre.Text = GenereLibro;
-                        //DetailsDescription.Text = DescrizioneLibro;
-                        //DetailsAuthor.Text = AutoreLibro;
-                        //DetailsPublisher.Text = EditoreLibro;
+                        DetailsTitle.InnerText = TitoloLibro;
+                        DetailsDate.InnerText = AnnoPubblicazione;
+                        DetailsGenre.InnerText = GenereLibro;
+                        DetailsDescription.InnerText = DescrizioneLibro;
+                        DetailsAuthor.InnerText = AutoreLibro;
+                        DetailsPublisher.InnerText = EditoreLibro;
 
 
                         break;
