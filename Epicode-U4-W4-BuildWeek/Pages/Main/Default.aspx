@@ -19,7 +19,7 @@
                           
                         <p class="card-text"> <%# Item.Prezzo %></p>
                        
-                        <a href="dettagli.aspx?IDlibro=<%# Item.IDLibro %>" class="btn btn-success">Dettaglio</a>
+                        <a href="Details.aspx?IDlibro=<%# Item.IDLibro %>" class="btn btn-success">Dettaglio</a>
                         </div>
                     </div>
                 </div>
