@@ -96,17 +96,17 @@ namespace Epicode_U4_W4_BuildWeek.Pages.Main
 
         protected void fillConsigliati(List<Libri> libriList, SqlConnection conn)
         {
-            //Mi prendo due generi a caso
+            //Mi la lista dei generi
+            List<String> generi = new List<string>();
             SqlCommand cmd = new SqlCommand("select * from T_Generi", conn);
             SqlDataReader sqlDataReader;
-
             conn.Open();
-
-            List<String> generi = new List<string >();
             sqlDataReader = cmd.ExecuteReader();
-
             while (sqlDataReader.Read())
-                generi.Add(sqlDataReader["Genere"].ToString());
+                generi.Add(sqlDataReader["IDGenere"].ToString());
+
+            //Ne selziono due a caso
+            
 
             conn.Close();
         }

@@ -122,8 +122,10 @@
     <Content Include="Content\img\Backgrounds\2.jpg" />
     <Content Include="Content\img\Libri\1984.jpg" />
     <Content Include="Content\img\Libri\19842.jpg" />
+    <Content Include="Content\img\Libri\CicloDICthulhu.jpg" />
     <Content Include="Content\img\Libri\Dracula.jpg" />
     <Content Include="Content\img\Libri\Dracula2.jpg" />
+    <Content Include="Content\img\Libri\GuidaGalattica.jpg" />
     <Content Include="Content\img\Libri\IFigliDiHurin.jpg" />
     <Content Include="Content\img\Libri\IFigliDiHurin2.jpg" />
     <Content Include="Content\img\Libri\IGialliDiEdgar AllanPoe.jpg" />
@@ -132,6 +134,8 @@
     <Content Include="Content\img\Libri\IlSignoreDegliAnelli2.jpg" />
     <Content Include="Content\img\Libri\IlSilmarillion.jpg" />
     <Content Include="Content\img\Libri\IlSilmarillion2.jpg" />
+    <Content Include="Content\img\Libri\IoRobot.jpg" />
+    <Content Include="Content\img\Libri\IRagazziDellaViaPal.jpg" />
     <Content Include="Content\img\Libri\LaFattoriaDegliAnimali.jpg" />
     <Content Include="Content\img\Libri\LaFattoriaDegliAnimali2.jpg" />
     <Content Include="Content\img\Libri\LoHobbit.jpg" />
@@ -140,6 +144,7 @@
     <Content Include="Content\img\Libri\ParadisiProibiti2.jpg" />
     <Content Include="Content\img\Libri\PitturaOlandese.jpg" />
     <Content Include="Content\img\Libri\RetroGenerico.jpg" />
+    <Content Include="Content\img\Libri\SogniDiRobot.jpg" />
     <Content Include="Content\img\Libri\Vermeer.jpg" />
     <Content Include="Content\img\Libri\Vermeer2.jpg" />
     <Content Include="Content\Site.css" />
