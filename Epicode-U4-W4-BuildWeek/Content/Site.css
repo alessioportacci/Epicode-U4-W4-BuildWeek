@@ -22,14 +22,15 @@ textarea {
 
 .home-carosello-top
 {
-    height:60vw;
     display:block;
 }
 
-.home-carosello-bg {
+.home-carosello-bg 
+{
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url(../../Content/img/Backgrounds/1.jpg)
+    background-attachment: fixed;
+    background-image: url(../../Content/img/Backgrounds/1.jpg);
 }
 
 .btn-scopri 
@@ -37,4 +38,33 @@ textarea {
     margin: auto;
     display: block !important;
     width: 10em;
+}
+
+.carosello-img
+{
+    height: 20vw !important;
+    min-height: 10em! important
+}
+
+.carosello-content
+{
+    width:auto;
+    border-bottom: 1px solid RGB(211,211,211);
+;
+}
+
+.card-home
+{
+    border:none !important
+}
+
+.libro-redirect
+{
+    text-decoration:none;
+    color:black;
+}
+
+.editore-text
+{
+    font-size:smaller
 }
