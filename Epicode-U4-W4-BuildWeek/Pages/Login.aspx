@@ -14,7 +14,8 @@
        .login-container
        {
             width: 50%;
-            margin-top:30%;
+            margin-top:20em;
+            max-width:40em
        }
     </style>
 </head>
