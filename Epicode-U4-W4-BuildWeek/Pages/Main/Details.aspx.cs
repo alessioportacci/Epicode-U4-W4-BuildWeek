@@ -30,9 +30,13 @@ namespace Epicode_U4_W4_BuildWeek.Pages.Main
 
                     while (sqlDataReader.Read())
                     {
-                        Img2.Src = "../../Content/img/Libri/" + sqlDataReader["Copertina"].ToString();
-                        DetailsImg.Src = "../../Content/img/Libri/" + sqlDataReader["Copertina"].ToString();
+                        string libro = sqlDataReader["Copertina"].ToString();
+
+                        DetailsImg.Src = "../../Content/img/Libri/" + libro;
                         DetailsImgR.Src = "../../Content/img/Libri/" + sqlDataReader["Retro"].ToString();
+
+                        ImgSfondo.Attributes.CssStyle.Add("background-image", String.Concat("url(../../Content/img/Libri/", libro, ")"));
+
                         string TitoloLibro = sqlDataReader["Titolo"].ToString();
                         string DescrizioneLibro = sqlDataReader["Descrizione"].ToString();
                         string AnnoPubblicazione = sqlDataReader["Anno"].ToString();

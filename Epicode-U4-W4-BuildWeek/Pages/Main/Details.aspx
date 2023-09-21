@@ -3,9 +3,12 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <div class="container-fluid">
-        <img src="..." class="d-block w-100" alt="..." id="Img2" runat="server">
+    <div style="height:35em" class="mb-5">
+        <div id="ImgSfondo" runat="server" class="container-fluid h-100 libro-top-copertina">
+        </div>
     </div>
+
+
 
     <div class="container">
         <div class="row d-flex flex-row justify-content-evenly">

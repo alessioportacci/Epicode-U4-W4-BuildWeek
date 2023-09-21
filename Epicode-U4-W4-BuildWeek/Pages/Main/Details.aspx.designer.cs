@@ -15,13 +15,13 @@ namespace Epicode_U4_W4_BuildWeek.Pages.Main
     {
 
         /// <summary>
-        /// Controllo Img2.
+        /// Controllo ImgSfondo.
         /// </summary>
         /// <remarks>
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlImage Img2;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl ImgSfondo;
 
         /// <summary>
         /// Controllo DetailsImg.
