@@ -6,7 +6,7 @@
 
     <div class="container justify-content-center align-items-center">
         <div class="mx-auto w-25">
-            <h1 class="mt-3">Aggiungi libro</h1>
+            <h1 class="mt-3">Modifica libro</h1>
 
             <asp:Label ID="Label1" runat="server" CssClass="form-label" Text="Titolo:"></asp:Label>
             <asp:TextBox ID="Titolo" CssClass="form-control mb-3" runat="server"></asp:TextBox>

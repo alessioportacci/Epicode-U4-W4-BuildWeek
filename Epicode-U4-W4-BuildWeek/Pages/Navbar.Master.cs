@@ -8,6 +8,7 @@ using System.Reflection.Emit;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Web.Caching;
 
 namespace Epicode_U4_W4_BuildWeek.Pages
 {
@@ -24,8 +25,7 @@ namespace Epicode_U4_W4_BuildWeek.Pages
                     string userId = Session["UserID"].ToString();
                     string nomeCognome = GetNomeCognomeUtente(userId);
 
-                    // Imposta il nome e il cognome nell'etichetta lblNomeCognome
-                   
+                    // Imposta il nome e il cognome nell'etichetta lblNomeCognome            
                 }
 
             }
@@ -142,8 +142,6 @@ namespace Epicode_U4_W4_BuildWeek.Pages
                 }
             }
         }
-
-
 
         //Prende il nome e cognome dal db
         public string GetNomeCognomeUtente(string userId)
@@ -306,6 +304,45 @@ namespace Epicode_U4_W4_BuildWeek.Pages
             }
         }
 
+        protected void CercaButton_Click(object sender, EventArgs e)
+        {
+            string userId = Session["UserID"].ToString();
+            string connectionString = ConfigurationManager.ConnectionStrings["ConnectionDb"].ConnectionString.ToString();
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                try
+                {
+                    conn.Open();
+
+                    SqlCommand cmd = new SqlCommand("SP_SearchLibro", conn);
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@Search", CercaText.Text);
+
+                    SqlDataReader sqlDataReader = cmd.ExecuteReader();
+
+                    string id = string.Empty;
+                    while (sqlDataReader.Read()) 
+                        id = sqlDataReader["IDLibro"].ToString();
+
+                    id = id == "" ? "54" : id;
+
+                    if (HttpContext.Current.Request.Url.AbsoluteUri.Contains("Admin"))
+                        Response.Redirect("../Details.aspx?IDLibro=" + id);
+                    Response.Redirect("Details.aspx?IDLibro=" + id);
+
+                }
+                catch (Exception ex)
+                {
+                    Response.Write(ex.ToString());
+                }
+            }
+        }
+
+        protected void logout(object sender, EventArgs e)
+        {
+            string a = "ciao";
+        }
 
         public class Prodotto
         {

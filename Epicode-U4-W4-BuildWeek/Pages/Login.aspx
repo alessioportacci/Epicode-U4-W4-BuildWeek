@@ -7,26 +7,36 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
     <link href="../Content/bootstrap.min.css" rel="stylesheet" />
-   
+     <link href="../Content/site.css" rel="stylesheet" />
+
       <style>
     
-       
-   
-        .container {
-            margin-top: 200px;
-        }
+
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
-        <div class="container">
-            <div class="w-25 mx-auto mt-5">
-                <asp:Label ID="Label1" runat="server" CssClass="form-label" Text="Username"></asp:Label>
-                <asp:TextBox ID="Username" runat="server" CssClass="form-control mb-3"></asp:TextBox>
-                <asp:Label ID="Label2" runat="server" CssClass="form-label"  Text="Password"></asp:Label>
-                <asp:TextBox ID="Password" TextMode="Password" runat="server" CssClass="form-control mb-3"></asp:TextBox>
-                <asp:Button ID="LoginButton" runat="server" Text="Login" CssClass="btn btn-outline-success" OnClick="LoginSend" />
-                <a href="Registrati.aspx" class="btn btn-outline-primary" runat="server" >Registrati</a>
+        <div class="container login-container shadow">
+            <div class="p-5 m-auto">
+                <div class="d-flex justify-content-center">
+                    <img src="../Content/img/LogoBiblio.png" height="30"/>
+                    <h4 class="mx-2">BiblioTu</h4> 
+                </div>
+                <div class="mx-auto">
+                    <h3>Accedi</h3>
+                    <asp:Label ID="Label1" runat="server" CssClass="form-label" Text="Username"></asp:Label>
+                    <asp:TextBox ID="Username" runat="server" CssClass="form-control mb-2 mw-100"></asp:TextBox>
+                    <asp:Label ID="Label2" runat="server" CssClass="form-label"  Text="Password"></asp:Label>
+                    <asp:TextBox ID="Password" TextMode="Password" runat="server" CssClass="form-control mb-4 w-100 mw-100"></asp:TextBox>
+                    <asp:Button ID="LoginButton" runat="server" Text="Accedi" CssClass="btn btn-outline-success d-block w-100 mw-100" OnClick="LoginSend" />
+ 
+                </div>
+               
+                <p class="mt-4">
+                    Sei nuovo?
+                    <a href="Registrati.aspx" runat="server" >Registrati</a>                
+                </p>
+                
             </div>
         </div> 
     </form>
