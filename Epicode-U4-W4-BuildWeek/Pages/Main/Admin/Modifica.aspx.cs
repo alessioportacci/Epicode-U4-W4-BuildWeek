@@ -135,7 +135,7 @@ namespace Epicode_U4_W4_BuildWeek.Pages.Main.Admin
                 int rowsAffected = cmd.ExecuteNonQuery();
                 if (rowsAffected > 0)
                 {
-                    // Update was successful, you can perform any additional actions or redirect the user.
+                    
                     Response.Redirect("Admin.aspx");
                 }
                 else
@@ -152,6 +152,40 @@ namespace Epicode_U4_W4_BuildWeek.Pages.Main.Admin
             {
                 conn.Close();
             }
+        }
+
+        protected void  Elimina_Click (object sender, EventArgs e) 
+        {
+            string connectionString = ConfigurationManager.ConnectionStrings["ConnectionDb"].ConnectionString.ToString();
+            SqlConnection conn = new SqlConnection(connectionString);
+
+            try
+            {
+                int productId = Convert.ToInt32(Request.QueryString["id"]);
+                conn.Open();
+                SqlCommand cmd = new SqlCommand("DELETE FROM T_Libri WHERE IDLibro = @IdLibro ", conn);
+                cmd.Parameters.AddWithValue("@IdLibro", productId);
+                int rowsAffected = cmd.ExecuteNonQuery();
+                if (rowsAffected > 0)
+                {
+                    
+                    Response.Redirect("Admin.aspx");
+                }
+                else
+                {
+
+
+                }
+            }
+            catch (Exception ex) 
+            {
+                Response.Write(ex.ToString());
+            }
+            finally 
+            { 
+                conn.Close(); 
+            }
+
         }
     }
 }
