@@ -147,6 +147,12 @@ i.bi-basket2-fill {
     background-color: #9ae2d5 !important;
 }
 
+.borderTop 
+{
+    border-top: 1px solid RGB(211,211,211);
+}
+}
+
 
 card12 {
     width: 300px;

@@ -124,10 +124,36 @@
         </div>
     </form>
 
+
+    <footer>
+        <div class="container-fluid borderTop mt-5 ">
+            <div class="row w-75 mx-auto">
+
+                <div class="col-md-6">
+                    <h3 class="mt-3">Contattaci</h3>
+                    <div class="d-flex mx-3 text-center ">
+                        <i class="bi bi-instagram fs-5"><span class="fs-6 mx-2">Instagram</span></i>
+                        <i class="bi bi-twitter-x fs-5"><span class="fs-6 mx-2">Twitter</span></i>
+                        <i class="bi bi-facebook fs-5"><span class="fs-6 mx-2">Facebook</span></i>
+                        <i class="bi bi-linkedin fs-5"><span class="fs-6 mx-2">Linkedin</span></i>
+                        <i class="bi bi-telephone-fill fs-5"><span class="fs-6 mx-2">3910509880</span></i>
+                        <i class="bi bi-envelope fs-5"><span class="fs-6 mx-2">Email</span></i>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mt-3 ">
+                    <p class="text-secondary">Our services</p>
+                    <p class="text-secondary">Privacy policy</p>
+                    <p class="text-secondary">Terms and conditions</p>
+                    <p class="text-secondary"> <i class="bi bi-c-circle"></i> Copyright All rights reserved </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script src="../Scripts/bootstrap.min.js"></script>
     <script>
-        if (window.location.href.includes("Admin"))
-        {
+        if (window.location.href.includes("Admin")) {
             document.getElementById("nav-home").href = "../Default.aspx"
             document.getElementById("nav-storico").href = "../Storico.aspx"
             document.getElementById("nav-admin").href = "Admin.aspx"
