@@ -59,7 +59,8 @@ textarea {
 
 .card-home
 {
-    border:none !important
+    border:none !important;
+    height: 100% !important;
 }
 
 .libro-redirect
@@ -90,6 +91,13 @@ textarea {
     background-color: #c0cefd;
 }
 
+.nav-bg-black {
+    background-color: #2d2d2d;
+    color: white;
+    position: sticky;
+    top: 1px
+}
+
 .in-evidenza-text 
 {
     font-size:14px
@@ -109,38 +117,32 @@ textarea {
 
 }
 
-
-.card12 {
-    width: 300px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    
+.title-text {
+    padding: 30px 20px 10px;
+    position: relative;
 }
 
-.card-container {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: space-between; 
-   
+.title-text::before {
+    content: "";
+    position: absolute;
+    left: 8%;
+    bottom: 10px;
+    width: 150px;
+    height: 11px;
+    transform: skew(-15deg) translateX(-50%);
+    background: #d4d8da;
+    z-index: -1;
+    box-shadow: 5px 5px 14px -8px rgba(0,0,0,0.6);
 }
 
-.card12 img {
-    max-width: 100%;
- 
+.text-bibliotu {
+    color: #9ae2d5 !important
 }
 
-.card12 p {
-    font-size: 14px;
-    margin: 10px 0;
+i.bi-basket2-fill {
+    color: #9ae2d5 !important
 }
 
-.card12 button {
-    margin-top: auto;
+.btn-outline-success, .btn-outline-success:hover, .btn-outline-success:active, .btn-outline-success:visited {
+    background-color: #9ae2d5 !important;
 }
-

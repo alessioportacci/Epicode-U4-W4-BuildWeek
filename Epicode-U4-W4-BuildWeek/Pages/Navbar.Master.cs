@@ -110,15 +110,29 @@ namespace Epicode_U4_W4_BuildWeek.Pages
 
                     if (numeroElementiNelCarrello > 0)
                     {
-                        
+                        // Esegui la stored procedure SP_Carrello
+                        SqlCommand cmd = new SqlCommand("SP_Carrello", conn);
+                        cmd.Parameters.AddWithValue("@IdUtente", userId);
+                        cmd.CommandType = CommandType.StoredProcedure;
+
+                        SqlDataReader reader = cmd.ExecuteReader();
+
+                        reader.Close();
+
+                        // Dopo aver letto i risultati e prima di chiudere la connessione, esegui l'aggiornamento della data di acquisto
+                        string updateDataAcquistoQuery = "UPDATE T_Carrello SET DataAcquisto = GETDATE() WHERE FKUtente = @IdUtente AND DataAcquisto IS NULL";
+                        SqlCommand updateDataAcquistoCmd = new SqlCommand(updateDataAcquistoQuery, conn);
+                        updateDataAcquistoCmd.Parameters.AddWithValue("@IdUtente", userId);
+                        updateDataAcquistoCmd.ExecuteNonQuery();
+
+                        // Svuota il carrello dopo l'aggiornamento della data di acquisto
                         SvuotaCarrello();
 
-                       
+                        // Reindirizza alla pagina conclusiva
                         Response.Redirect("Ordine.aspx");
                     }
                     else
                     {
-                        
                         
                     }
                 }
@@ -128,6 +142,7 @@ namespace Epicode_U4_W4_BuildWeek.Pages
                 }
             }
         }
+
 
 
         //Prende il nome e cognome dal db

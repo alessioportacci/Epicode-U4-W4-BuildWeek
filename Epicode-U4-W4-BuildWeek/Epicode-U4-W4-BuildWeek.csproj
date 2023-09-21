@@ -120,9 +120,20 @@
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\img\Backgrounds\1.jpg" />
     <Content Include="Content\img\Backgrounds\2.jpg" />
+    <Content Include="Content\img\Libri\10PiccoliIndiani.jpg" />
     <Content Include="Content\img\Libri\1984.jpg" />
     <Content Include="Content\img\Libri\19842.jpg" />
+    <Content Include="Content\img\Libri\2001.jpg" />
+    <Content Include="Content\img\Libri\2010.jpg" />
+    <Content Include="Content\img\Libri\Addio.jpg" />
+    <Content Include="Content\img\Libri\Bach.jpg" />
+    <Content Include="Content\img\Libri\Banksy.jpg" />
+    <Content Include="Content\img\Libri\Bansky2.jpg" />
+    <Content Include="Content\img\Libri\Bartleby.jpg" />
+    <Content Include="Content\img\Libri\Beatles.jpg" />
+    <Content Include="Content\img\Libri\Beatles2.jpg" />
     <Content Include="Content\img\Libri\CicloDICthulhu.jpg" />
+    <Content Include="Content\img\Libri\Cronache.jpg" />
     <Content Include="Content\img\Libri\Dracula.jpg" />
     <Content Include="Content\img\Libri\Dracula2.jpg" />
     <Content Include="Content\img\Libri\GuidaGalattica.jpg" />
@@ -136,17 +147,39 @@
     <Content Include="Content\img\Libri\IlSilmarillion2.jpg" />
     <Content Include="Content\img\Libri\IoRobot.jpg" />
     <Content Include="Content\img\Libri\IRagazziDellaViaPal.jpg" />
+    <Content Include="Content\img\Libri\ISentieriDeiNidiDiRagno.jpg" />
+    <Content Include="Content\img\Libri\L%27assassinio.jpg" />
     <Content Include="Content\img\Libri\LaFattoriaDegliAnimali.jpg" />
     <Content Include="Content\img\Libri\LaFattoriaDegliAnimali2.jpg" />
+    <Content Include="Content\img\Libri\LaSerieInfernale.jpg" />
+    <Content Include="Content\img\Libri\LedZeppelin.jpg" />
+    <Content Include="Content\img\Libri\LedZeppelin2.jpg" />
     <Content Include="Content\img\Libri\LoHobbit.jpg" />
     <Content Include="Content\img\Libri\LoHobbit2.jpg" />
+    <Content Include="Content\img\Libri\MobyDick.jpg" />
+    <Content Include="Content\img\Libri\Nirvana.jpg" />
+    <Content Include="Content\img\Libri\Nirvana2.jpg" />
+    <Content Include="Content\img\Libri\Obscura.jpg" />
+    <Content Include="Content\img\Libri\OperetteMorali.jpg" />
     <Content Include="Content\img\Libri\ParadisiProibiti.jpg" />
     <Content Include="Content\img\Libri\ParadisiProibiti2.jpg" />
     <Content Include="Content\img\Libri\PitturaOlandese.jpg" />
+    <Content Include="Content\img\Libri\Preraffaelliti.jpg" />
+    <Content Include="Content\img\Libri\Preraffaelliti2.jpg" />
+    <Content Include="Content\img\Libri\PromessiSposi.jpg" />
+    <Content Include="Content\img\Libri\PromessiSposi2.jpg" />
+    <Content Include="Content\img\Libri\ReGiallo.jpg" />
     <Content Include="Content\img\Libri\RetroGenerico.jpg" />
+    <Content Include="Content\img\Libri\Rolling.jpg" />
+    <Content Include="Content\img\Libri\Rolling2.jpg" />
     <Content Include="Content\img\Libri\SogniDiRobot.jpg" />
+    <Content Include="Content\img\Libri\tfg.jpg" />
+    <Content Include="Content\img\Libri\Triperuno.jpg" />
+    <Content Include="Content\img\Libri\TuttoSherlok.jpg" />
+    <Content Include="Content\img\Libri\VariazioniBelliche.jpg" />
     <Content Include="Content\img\Libri\Vermeer.jpg" />
     <Content Include="Content\img\Libri\Vermeer2.jpg" />
+    <Content Include="Content\img\LogoBiblio.png" />
     <Content Include="Content\Site.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
@@ -157,6 +190,7 @@
     <Content Include="Pages\Main\Ordine.aspx" />
     <Content Include="Pages\Main\Default.aspx" />
     <Content Include="Pages\Main\Details.aspx" />
+    <Content Include="Pages\Main\Storico.aspx" />
     <Content Include="Pages\Registrati.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -278,6 +312,13 @@
     <Compile Include="Pages\Main\Details.aspx.designer.cs">
       <DependentUpon>Details.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Main\Storico.aspx.cs">
+      <DependentUpon>Storico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Main\Storico.aspx.designer.cs">
+      <DependentUpon>Storico.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Navbar.Master.cs">
       <DependentUpon>Navbar.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -296,7 +337,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\img\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
