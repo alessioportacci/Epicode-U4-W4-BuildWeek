@@ -8,6 +8,7 @@ using System.Reflection.Emit;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Web.Caching;
 
 namespace Epicode_U4_W4_BuildWeek.Pages
 {
@@ -110,15 +111,29 @@ namespace Epicode_U4_W4_BuildWeek.Pages
 
                     if (numeroElementiNelCarrello > 0)
                     {
-                        
+                        // Esegui la stored procedure SP_Carrello
+                        SqlCommand cmd = new SqlCommand("SP_Carrello", conn);
+                        cmd.Parameters.AddWithValue("@IdUtente", userId);
+                        cmd.CommandType = CommandType.StoredProcedure;
+
+                        SqlDataReader reader = cmd.ExecuteReader();
+
+                        reader.Close();
+
+                        // Dopo aver letto i risultati e prima di chiudere la connessione, esegui l'aggiornamento della data di acquisto
+                        string updateDataAcquistoQuery = "UPDATE T_Carrello SET DataAcquisto = GETDATE() WHERE FKUtente = @IdUtente AND DataAcquisto IS NULL";
+                        SqlCommand updateDataAcquistoCmd = new SqlCommand(updateDataAcquistoQuery, conn);
+                        updateDataAcquistoCmd.Parameters.AddWithValue("@IdUtente", userId);
+                        updateDataAcquistoCmd.ExecuteNonQuery();
+
+                        // Svuota il carrello dopo l'aggiornamento della data di acquisto
                         SvuotaCarrello();
 
-                       
+                        // Reindirizza alla pagina conclusiva
                         Response.Redirect("Ordine.aspx");
                     }
                     else
                     {
-                        
                         
                     }
                 }
@@ -128,6 +143,7 @@ namespace Epicode_U4_W4_BuildWeek.Pages
                 }
             }
         }
+
 
 
         //Prende il nome e cognome dal db
@@ -288,6 +304,39 @@ namespace Epicode_U4_W4_BuildWeek.Pages
             {
                 conn.Close();
 
+            }
+        }
+
+        protected void CercaButton_Click(object sender, EventArgs e)
+        {
+            string userId = Session["UserID"].ToString();
+            string connectionString = ConfigurationManager.ConnectionStrings["ConnectionDb"].ConnectionString.ToString();
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                try
+                {
+                    conn.Open();
+
+                    SqlCommand cmd = new SqlCommand("SP_SearchLibro", conn);
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@Search", CercaText.Text);
+
+                    SqlDataReader sqlDataReader = cmd.ExecuteReader();
+
+                    string id = string.Empty;
+                    while (sqlDataReader.Read()) 
+                        id = sqlDataReader["IDLibro"].ToString();
+
+                    if (HttpContext.Current.Request.Url.AbsoluteUri.Contains("Admin"))
+                        Response.Redirect("../Details.aspx?IDLibro=" + id);
+                    Response.Redirect("Details.aspx?IDLibro=" + id);
+
+                }
+                catch (Exception ex)
+                {
+                    Response.Write(ex.ToString());
+                }
             }
         }
 

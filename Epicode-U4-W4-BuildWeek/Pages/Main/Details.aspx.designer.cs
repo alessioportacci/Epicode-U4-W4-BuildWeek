@@ -24,6 +24,15 @@ namespace Epicode_U4_W4_BuildWeek.Pages.Main
         protected global::System.Web.UI.HtmlControls.HtmlImage DetailsImg;
 
         /// <summary>
+        /// Controllo DetailsImgR.
+        /// </summary>
+        /// <remarks>
+        /// Campo generato automaticamente.
+        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlImage DetailsImgR;
+
+        /// <summary>
         /// Controllo DetailsTitle.
         /// </summary>
         /// <remarks>
@@ -42,13 +51,22 @@ namespace Epicode_U4_W4_BuildWeek.Pages.Main
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl DetailsDate;
 
         /// <summary>
-        /// Controllo LinkButton1.
+        /// Controllo AggiungiCarrello.
         /// </summary>
         /// <remarks>
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton1;
+        protected global::System.Web.UI.HtmlControls.HtmlButton AggiungiCarrello;
+
+        /// <summary>
+        /// Controllo CarrelloButton.
+        /// </summary>
+        /// <remarks>
+        /// Campo generato automaticamente.
+        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button CarrelloButton;
 
         /// <summary>
         /// Controllo DetailsGenre.

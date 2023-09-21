@@ -37,6 +37,7 @@
             </asp:DropDownList>
 
             <asp:Button ID="Aggiungi" runat="server" CssClass="btn  btn-success" Text="Modifica Libro" OnClick="Aggiungi_Click" />
+            <asp:Button ID="Elimina" runat="server" CssClass="btn  btn-danger" Text="Elimina Libro" OnClick="Elimina_Click" />
         </div>
     </div>
 </asp:Content>
