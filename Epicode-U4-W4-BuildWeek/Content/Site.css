@@ -190,3 +190,10 @@ card12 {
     margin-top: 20em;
     max-width: 40em
 }
+
+.libro-top-copertina {
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(8px);
+    padding: 0px !important
+}
