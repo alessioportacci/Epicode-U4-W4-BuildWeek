@@ -306,6 +306,9 @@ namespace Epicode_U4_W4_BuildWeek.Pages
             }
         }
 
+        private void Cerca_Button_Press()
+        { }
+
 
         public class Prodotto
         {

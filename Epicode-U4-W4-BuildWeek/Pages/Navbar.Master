@@ -45,8 +45,8 @@
                     <i style="color: #9ae2d5 !important" class="bi bi-basket2-fill"></i>
                 </a>
                 <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <input id="Cerca" runat="server" class="form-control me-2" type="search" placeholder="Cerca libro..." aria-label="Search">
+                    <button id="Cerca_button" runat="server" onclick="Cerca_Button_Press" class="btn btn-outline-success" type="submit">Cerca</button>
                 </form>
             </div>
         </div>

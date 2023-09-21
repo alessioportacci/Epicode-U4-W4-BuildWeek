@@ -31,8 +31,11 @@
                     <div class="card-body">
                         <h5 class="card-title" id="DetailsTitle" runat="server"></h5>
                         <p class="card-text" id="DetailsDate" runat="server"></p>
-                        <a data-bs-toggle="offcanvas" href="#offcanvasExample" class="btn btn-primary" runat="server" OnClick="ButtonAgg_Click">Aggiungi al carrello</a>
-                    </div>
+                        <button id="AggiungiCarrello" data-bs-toggle="offcanvas" href="#offcanvasExample" class="btn btn-primary" 
+                                runat="server" OnClick="ButtonAgg_Click">Aggiungi al carrello</button>
+
+                        <asp:Button ID="CarrelloButton" runat="server" Text="Aggiungi al carrello" CssClass="btn btn-outline-success" OnClick="ButtonAgg_Click" />
+
                    </div>
 
             </div>
