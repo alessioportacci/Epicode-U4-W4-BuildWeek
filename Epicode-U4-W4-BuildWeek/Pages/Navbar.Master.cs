@@ -144,8 +144,6 @@ namespace Epicode_U4_W4_BuildWeek.Pages
             }
         }
 
-
-
         //Prende il nome e cognome dal db
         public string GetNomeCognomeUtente(string userId)
         {
@@ -328,6 +326,8 @@ namespace Epicode_U4_W4_BuildWeek.Pages
                     while (sqlDataReader.Read()) 
                         id = sqlDataReader["IDLibro"].ToString();
 
+                    id = id == "" ? "54" : id;
+
                     if (HttpContext.Current.Request.Url.AbsoluteUri.Contains("Admin"))
                         Response.Redirect("../Details.aspx?IDLibro=" + id);
                     Response.Redirect("Details.aspx?IDLibro=" + id);
@@ -339,7 +339,6 @@ namespace Epicode_U4_W4_BuildWeek.Pages
                 }
             }
         }
-
 
         public class Prodotto
         {
