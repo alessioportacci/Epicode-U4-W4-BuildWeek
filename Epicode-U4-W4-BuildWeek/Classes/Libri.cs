@@ -15,6 +15,7 @@ namespace Epicode_U4_W4_BuildWeek.Classes
         public string Prezzo { get; set; }
 
         public string Autore { get; set; }
+        public int IdGenere { get; set; }
         public string Genere { get; set; }
         public string Editore { get; set; }
 
