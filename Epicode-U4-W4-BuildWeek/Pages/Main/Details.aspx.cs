@@ -30,6 +30,7 @@ namespace Epicode_U4_W4_BuildWeek.Pages.Main
 
                     while (sqlDataReader.Read())
                     {
+                        Img2.Src = "../../Content/img/Libri/" + sqlDataReader["Copertina"].ToString();
                         DetailsImg.Src = "../../Content/img/Libri/" + sqlDataReader["Copertina"].ToString();
                         DetailsImgR.Src = "../../Content/img/Libri/" + sqlDataReader["Retro"].ToString();
                         string TitoloLibro = sqlDataReader["Titolo"].ToString();
@@ -39,7 +40,7 @@ namespace Epicode_U4_W4_BuildWeek.Pages.Main
                         string AutoreLibro = sqlDataReader["NomeAutore"].ToString();
                         string GenereLibro = sqlDataReader["Genere"].ToString();
                         string EditoreLibro = sqlDataReader["NomeEditore"].ToString();
-
+                        
                         DetailsTitle.InnerText = TitoloLibro;
                         DetailsDate.InnerText = AnnoPubblicazione;
                         DetailsGenre.InnerText = GenereLibro;
