@@ -8,6 +8,7 @@ using System.Reflection.Emit;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Web.Caching;
 
 namespace Epicode_U4_W4_BuildWeek.Pages
 {
@@ -306,8 +307,38 @@ namespace Epicode_U4_W4_BuildWeek.Pages
             }
         }
 
-        private void Cerca_Button_Press()
-        { }
+        protected void CercaButton_Click(object sender, EventArgs e)
+        {
+            string userId = Session["UserID"].ToString();
+            string connectionString = ConfigurationManager.ConnectionStrings["ConnectionDb"].ConnectionString.ToString();
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                try
+                {
+                    conn.Open();
+
+                    SqlCommand cmd = new SqlCommand("SP_SearchLibro", conn);
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@Search", CercaText.Text);
+
+                    SqlDataReader sqlDataReader = cmd.ExecuteReader();
+
+                    string id = string.Empty;
+                    while (sqlDataReader.Read()) 
+                        id = sqlDataReader["IDLibro"].ToString();
+
+                    if (HttpContext.Current.Request.Url.AbsoluteUri.Contains("Admin"))
+                        Response.Redirect("../Details.aspx?IDLibro=" + id);
+                    Response.Redirect("Details.aspx?IDLibro=" + id);
+
+                }
+                catch (Exception ex)
+                {
+                    Response.Write(ex.ToString());
+                }
+            }
+        }
 
 
         public class Prodotto
