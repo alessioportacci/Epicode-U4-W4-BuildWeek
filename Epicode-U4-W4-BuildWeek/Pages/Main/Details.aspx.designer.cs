@@ -60,15 +60,6 @@ namespace Epicode_U4_W4_BuildWeek.Pages.Main
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl DetailsDate;
 
         /// <summary>
-        /// Controllo AggiungiCarrello.
-        /// </summary>
-        /// <remarks>
-        /// Campo generato automaticamente.
-        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlButton AggiungiCarrello;
-
-        /// <summary>
         /// Controllo CarrelloButton.
         /// </summary>
         /// <remarks>

@@ -9,7 +9,7 @@
 
     <div class="container">
         <div class="row d-flex flex-row justify-content-evenly">
-            <div class="col-3">
+            <div class="col">
                 <div class="card" style="">
 
                     <div id="carouselExample" class="carousel slide">
@@ -35,24 +35,24 @@
                     <div class="card-body">
                         <h5 class="card-title" id="DetailsTitle" runat="server"></h5>
                         <p class="card-text" id="DetailsDate" runat="server"></p>
-                        <button id="AggiungiCarrello" data-bs-toggle="offcanvas" href="#offcanvasExample" class="btn btn-primary" 
-                                runat="server" OnClick="ButtonAgg_Click">Aggiungi al carrello</button>
 
-                        <asp:Button ID="CarrelloButton" runat="server" Text="Aggiungi al carrello" CssClass="btn btn-outline-success" OnClick="ButtonAgg_Click" />
+                        <asp:Button ID="CarrelloButton" runat="server" Text="Aggiungi al carrello" data-bs-toggle="offcanvas" href="#offcanvasExample" CssClass="btn btn-outline-success" OnClick="ButtonAgg_Click" />
 
-                   </div>
-
-            </div>
-                <div class="col-4 flex-grow-1">
-                    <div class="" style="">
-                        <h5 id="DetailsGenre" runat="server">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</h5>
-                        <p id="DetailsDescription" class="" runat="server"><small class="text-body-secondary">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</small></p>
-                        <h4 id="DetailsAuthor" class="" runat="server">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</h4>
-                        <h5 id="DetailsPublisher" runat="server">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</h5>
                     </div>
+
                 </div>
+            </div>
+            <div class="col flex-grow-1">
+                <div class="" style="">
+                    <h5 id="DetailsGenre" runat="server"></h5>
+                    <p id="DetailsDescription" class="" runat="server"><small class="text-body-secondary"></small></p>
+                    <h4 id="DetailsAuthor" class="" runat="server"></h4>
+                    <h5 id="DetailsPublisher" runat="server">.</h5>
+                </div>
+            </div>
 
         </div>
+
     </div>
         
 </asp:Content>
