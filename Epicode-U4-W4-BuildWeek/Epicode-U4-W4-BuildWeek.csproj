@@ -179,6 +179,7 @@
     <Content Include="Content\img\Libri\VariazioniBelliche.jpg" />
     <Content Include="Content\img\Libri\Vermeer.jpg" />
     <Content Include="Content\img\Libri\Vermeer2.jpg" />
+    <Content Include="Content\img\LogoBiblio.png" />
     <Content Include="Content\Site.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
@@ -336,7 +337,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\img\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
