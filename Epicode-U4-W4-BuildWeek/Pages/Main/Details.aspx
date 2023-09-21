@@ -8,7 +8,7 @@
     </div>
 
     <div class="container">
-        <div class="row d-flex flex-row">
+        <div class="row d-flex flex-row justify-content-evenly">
             <div class="col-3">
                 <div class="card" style="">
 
@@ -40,7 +40,7 @@
                    </div>
 
             </div>
-                <div class="col-4">
+                <div class="col-4 flex-grow-1">
                     <div class="" style="">
                         <h5 id="DetailsGenre" runat="server">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</h5>
                         <p id="DetailsDescription" class="" runat="server"><small class="text-body-secondary">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</small></p>
