@@ -9,6 +9,7 @@
                 <div class="card" style="">
 
                     <div id="carouselExample" class="carousel slide">
+
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <img src="..." class="d-block w-100" alt="..." id="DetailsImg" runat="server">
@@ -21,7 +22,7 @@
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
                         </button>
@@ -30,7 +31,7 @@
                     <div class="card-body">
                         <h5 class="card-title" id="DetailsTitle" runat="server"></h5>
                         <p class="card-text" id="DetailsDate" runat="server"></p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a data-bs-toggle="offcanvas" href="#offcanvasExample" class="btn btn-primary" runat="server" OnClick="ButtonAgg_Click">Aggiungi al carrello</a>
                     </div>
                    </div>
 

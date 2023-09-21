@@ -63,5 +63,48 @@ namespace Epicode_U4_W4_BuildWeek.Pages.Main
 
             }
         }
+
+        private void ButtonAgg_Click(object sender, EventArgs e)
+        {
+            string connectionString = ConfigurationManager.ConnectionStrings["ConnectionDb"].ConnectionString.ToString();
+            SqlConnection conn = new SqlConnection(connectionString);
+
+            //string userId = Session["UserID"].ToString();
+            //string libroId = "IDLibro";
+            //DateTime dataAcquisto = new DateTime();
+
+            try
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = conn;
+                cmd.CommandText = "INSERT INTO T_Carrello VALUES(@FKUtente, @FKLibro, @DataAcquisto)";
+                //"FROM V_Libri WHERE IDLibro=@IDLibro", conn);
+                //cmd.Parameters.AddWithValue("IDLibro", Request.QueryString["IDLibro"]);
+                string userId = Session["UserID"].ToString();
+                cmd.Parameters.AddWithValue("FKUtente", userId);
+                cmd.Parameters.AddWithValue("FKLibro", Request.QueryString["IDLibro"]);
+                //cmd.Parameters.AddWithValue("DataAcquisto", dataAcquisto);
+                cmd.ExecuteNonQuery();
+
+                //int inserimentoEffettuato = cmd.ExecuteNonQuery();
+
+                //if (inserimentoEffettuato > 0)
+                //{
+                  //  Response("Inserimento effettuato con successo");
+                //}
+            }
+
+            catch(Exception ex)
+            {
+
+            }
+            finally
+            {
+                conn.Close();
+            }
+          
+        }
+
     }
 }
