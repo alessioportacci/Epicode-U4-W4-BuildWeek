@@ -12,7 +12,9 @@
             <div class="container w-25   ">
 
                 <div class=" d-flex my-3 ">
+                    <a href="Details.aspx?IdLibro=<%# Eval ("IDProdotto") %>"> 
                     <img src="../../Content/img/Libri/<%# Eval("Img") %>" class="imgConsigliato" alt="avatar" height="200">
+                    </a>
                     <div class="d-flex flex-column justify-content-center  ms-5">
                         <strong class="fs-3">Titolo:</strong> <p class="fs-5">  <%# Eval("Titolo") %> </p>
                         <strong class="fs-3">Prezzo:</strong> <p class="fs-5"> <%# Eval("Prezzo", "{0:C}") %> </p> 
