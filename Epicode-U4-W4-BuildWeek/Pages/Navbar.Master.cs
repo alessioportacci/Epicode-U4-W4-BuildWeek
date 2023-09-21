@@ -25,8 +25,7 @@ namespace Epicode_U4_W4_BuildWeek.Pages
                     string userId = Session["UserID"].ToString();
                     string nomeCognome = GetNomeCognomeUtente(userId);
 
-                    // Imposta il nome e il cognome nell'etichetta lblNomeCognome
-                   
+                    // Imposta il nome e il cognome nell'etichetta lblNomeCognome            
                 }
 
             }
@@ -338,6 +337,11 @@ namespace Epicode_U4_W4_BuildWeek.Pages
                     Response.Write(ex.ToString());
                 }
             }
+        }
+
+        protected void logout(object sender, EventArgs e)
+        {
+            string a = "ciao";
         }
 
         public class Prodotto

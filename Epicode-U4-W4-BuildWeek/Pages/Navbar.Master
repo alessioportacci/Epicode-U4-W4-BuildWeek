@@ -35,7 +35,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a id="nav-admin" class="nav-link active text-white" aria-current="page" href="Admin/Admin.aspx">Admin</a>
+                            <a id="nav-admin" class="nav-link active text-white" aria-current="page" href="Admin/Admin.aspx">Area riservata</a>
                         </li>
                     </ul>
 
@@ -46,8 +46,13 @@
                     <a class="mx-3 fs-3 text-biblou" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
                         <i style="color: #9ae2d5 !important" class="bi bi-basket2-fill"></i>
                     </a>
-                        <asp:TextBox ID="CercaText" runat="server" CssClass="form-control me-2"></asp:TextBox>
-                        <asp:Button ID="CercaButton" runat="server" Text="Cerca" CssClass="btn btn-outline-success fw-bold" OnClick="CercaButton_Click" />
+                    <asp:TextBox ID="CercaText" runat="server" CssClass="form-control me-2"></asp:TextBox>
+                    <asp:Button ID="CercaButton" runat="server" Text="Cerca" CssClass="btn btn-outline-success fw-bold" OnClick="CercaButton_Click" />
+                
+                    <a id="nav-login" class="mx-3 fs-3 text-biblou" data-bs-toggle="offcanvas" href="../login.aspx" role="button" aria-controls="offcanvasExample">
+                        <i class="bi bi-box-arrow-right text-bibliotu"></i>
+                    </a>                   
+                
                 </div>
             </div>
         </nav>
@@ -126,6 +131,7 @@
             document.getElementById("nav-home").href = "../Default.aspx"
             document.getElementById("nav-storico").href = "../Storico.aspx"
             document.getElementById("nav-admin").href = "Admin.aspx"
+            document.getElementById("nav-login").href = "../../login.aspx"
         }
     </script>
 
