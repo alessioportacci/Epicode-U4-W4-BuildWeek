@@ -109,3 +109,21 @@ textarea {
     top:20px
 
 }
+
+.title-text {
+    padding: 30px 20px 10px;
+    position: relative;
+}
+
+    .title-text::before {
+        content: "";
+        position: absolute;
+        left: 8%;
+        bottom: 10px;
+        width: 150px;
+        height: 11px;
+        transform: skew(-15deg) translateX(-50%);
+        background: #d4d8da;
+        z-index: -1;
+        box-shadow: 5px 5px 14px -8px rgba(0,0,0,0.6);
+    }

@@ -49,6 +49,9 @@ namespace Epicode_U4_W4_BuildWeek.Pages.Main
             Repeater1.DataSource = listalibri;
             Repeater1.DataBind();
 
+            RepeaterBestSellers.DataSource = listalibri.OrderBy(x => rnd.Next()).Take(6);
+            RepeaterBestSellers.DataBind();
+
             conn.Close();
 
             fillConsigliati(listalibri, conn);
@@ -136,7 +139,7 @@ namespace Epicode_U4_W4_BuildWeek.Pages.Main
             //Altri 3
 
             int index2 = rnd.Next(generi.Count);
-            index2 = index2 == 0 && index2 == index ? 8 : index2;
+            index2 = index2 == 0 || index2 == index ? 8 : index2;
 
             libriAppoggio = libriList.Where(gen => gen.IdGenere == index2).ToList();
 

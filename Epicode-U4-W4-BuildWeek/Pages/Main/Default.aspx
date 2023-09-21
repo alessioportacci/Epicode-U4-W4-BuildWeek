@@ -17,7 +17,12 @@
                   <h5 ID="CaroselloTitolo0" runat="server" class="text-center"> </h5>
 
                   <img id="CaroselloImg0" runat="server" height="5" src="..." class="img-thumbnail mx-auto d-block carosello-img shadow" alt="...">
-                  <a id="CaroselloUrl0" runat="server" class="mx-auto my-3 btn btn-scopri btn-primary"> Scopri di più </a>
+                    <a id="CaroselloUrl0" runat="server" href=".." class="libro-redirect ">
+                        <h4 class="text-center my-3"> 
+                            <i class="bi bi-arrow-right-circle-fill"></i> 
+                            Scopri di più
+                        </h4>
+                    </a>
               </div>
           </div>
         </div>
@@ -30,7 +35,13 @@
                   <h5 ID="CaroselloTitolo1" runat="server" class="text-center"> </h5>
 
                   <img id="CaroselloImg1" runat="server" src="" class="img-thumbnail mx-auto d-block carosello-img shadow" alt="...">
-                  <a id="CaroselloUrl1" runat="server" class="mx-auto my-3 btn btn-scopri btn-primary"> Scopri di più </a>
+                    <a id="CaroselloUrl1" runat="server" href=".." class="libro-redirect ">
+                        <h4 class="text-center my-3"> 
+                            <i class="bi bi-arrow-right-circle-fill"></i> 
+                            Scopri di più
+                        </h4>
+                    </a>              
+              
               </div>
           </div>
         </div>
@@ -43,7 +54,12 @@
                   <h5 ID="CaroselloTitolo2" runat="server" class="text-center"> </h5>
 
                   <img id="CaroselloImg2" runat="server" src="..." class="img-thumbnail mx-auto d-block carosello-img shadow" alt="...">
-                  <a href="..." id="CaroselloUrl2" runat="server" class="mx-auto my-3 btn btn-scopri btn-primary"> Scopri di più </a>
+                    <a id="CaroselloUrl2" runat="server" href=".." class="libro-redirect ">
+                        <h4 class="text-center my-3"> 
+                            <i class="bi bi-arrow-right-circle-fill"></i> 
+                            Scopri di più
+                        </h4>
+                    </a>                
               </div>
           </div>
         </div>
@@ -56,7 +72,12 @@
                   <h5 ID="CaroselloTitolo3" runat="server" class="text-center"> </h5>
 
                   <img id="CaroselloImg3" runat="server" src="..." class="img-thumbnail mx-auto d-block carosello-img shadow" alt="...">
-                  <a href="..." id="CaroselloUrl3" runat="server" class="mx-auto my-3 btn btn-scopri btn-primary"> Scopri di più </a>
+                    <a id="CaroselloUrl3" runat="server" href=".." class="libro-redirect ">
+                        <h4 class="text-center my-3"> 
+                            <i class="bi bi-arrow-right-circle-fill"></i> 
+                            Scopri di più
+                        </h4>
+                    </a>                 
               </div>
           </div>
         </div>
@@ -73,9 +94,61 @@
       </button>
     </div>
 
-    <!-- Quadratini -->
+    <!-- In evidenza -->
+    <div class="container my-5 mx-auto p-4 bg-gray shadow in-evidenza">
+        <p class="in-evidenza-text text-end"> ⭐ in evidenza</p>
+        <div class="row row-cols-1 row-cols-md-2 justify-content-evenly align-items-center ">
 
-      <div class="container my-5 mx-auto">
+            <div class="text-center">
+                <a id="evidenzaUrl" runat="server">
+                    <img id="evidenzaImg" runat="server" src="../../Content/img/Libri/Dracula.jpg" height="500" class="mx-auto imgConsigliato" />
+                </a>
+            </div>
+            <div>
+                <h2 id="evidenzaTitolo" runat="server" class="mt-5">Titolo</h2>
+                <p id="evidenzaAutore" runat="server" class="text-truncate text-secondary m-0">Autore</p>
+                <p id="evidenzaDescrizione" runat="server" class="p-4"> Descrizione</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Best Seller -->
+    <div class="container mt-5">
+           <h2 class="nostro-catalogo-text title-text">Best Sellers</h2>
+
+            <div class="row row-cols-2 row-cols-md-4 row-cols-lg-6 justify-content-center">
+
+                <asp:Repeater ID="RepeaterBestSellers" runat="server" ItemType="Epicode_U4_W4_BuildWeek.Classes.Libri"  >
+                     <ItemTemplate>
+
+                         <div class="p-1">
+                                <div class="card card-home  mx-auto imgConsigliato my-1" style="width: 10rem;">
+                                    <img src="../../Content/img/Libri/<%# Item.Copertina %>" class="card-img-top" alt="avatar" height="230">
+                                    <div class="card-body">
+
+                                        <p class="text-truncate text-secondary m-0"> <%# Item.Autore %></p>
+                                        <a href="Details.aspx?IdLibro=<%#Item.IDLibro %>" class="libro-redirect ">
+                                            <h5 class="card-title"> 
+                                                <i class="bi bi-arrow-right-circle-fill"></i> 
+                                                <%# Item.Titolo %>
+                                            </h5>
+                                        </a>
+                                        <p class="text-secondary editore-text"> <%# Item.Editore %></p>
+                                    </div>
+                                 </div>
+                         </div>
+
+                    </ItemTemplate>
+                </asp:Repeater>
+
+            </div>
+
+
+    </div>
+
+    <!-- Quadratini -->
+    <div class="container my-5 mx-auto">
         <div class="row row-cols-1 row-cols-lg-2 mx-auto shadow">
 
             <!-- 1/2/3 -->
@@ -199,29 +272,9 @@
       </div>
 
 
-    <!-- In evidenza -->
-
-    <div class="container my-5 mx-auto p-4 bg-gray shadow in-evidenza">
-        <p class="in-evidenza-text text-end"> ⭐ in evidenza</p>
-        <div class="row row-cols-1 row-cols-md-2 justify-content-evenly align-items-center ">
-
-            <div class="text-center">
-                <a id="evidenzaUrl" runat="server">
-                    <img id="evidenzaImg" runat="server" src="../../Content/img/Libri/Dracula.jpg" height="500" class="mx-auto imgConsigliato" />
-                </a>
-            </div>
-            <div>
-                <h2 id="evidenzaTitolo" runat="server" class="mt-5">Titolo</h2>
-                <p id="evidenzaAutore" runat="server" class="text-truncate text-secondary m-0">Autore</p>
-                <p id="evidenzaDescrizione" runat="server" class="p-4"> Descrizione</p>
-            </div>
-        </div>
-
-    </div>
-
     <!-- Catalogo -->
     <div class="container mt-5 nostro-catalogo">
-           <h2 class="nostro-catalogo-text">Il nostro catalogo</h2>
+           <h2 class="nostro-catalogo-text title-text">Il nostro catalogo</h2>
             <div class="row row-cols-2 row-cols-md-4 row-cols-lg-6 justify-content-center">
 
                 <asp:Repeater ID="Repeater1" runat="server" ItemType="Epicode_U4_W4_BuildWeek.Classes.Libri"  >
@@ -248,6 +301,6 @@
                 </asp:Repeater>
 
             </div>
-        </div>
+    </div>
 
 </asp:Content>
