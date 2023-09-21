@@ -11,7 +11,7 @@ namespace Epicode_U4_W4_BuildWeek.Pages.Main.Admin
 {
 
 
-    public partial class AggiungiProdotto
+    public partial class Modifica
     {
 
         /// <summary>
@@ -105,102 +105,12 @@ namespace Epicode_U4_W4_BuildWeek.Pages.Main.Admin
         protected global::System.Web.UI.WebControls.Button Aggiungi;
 
         /// <summary>
-        /// Controllo NomeAutore.
+        /// Controllo Elimina.
         /// </summary>
         /// <remarks>
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox NomeAutore;
-
-        /// <summary>
-        /// Controllo BiografiaAutore.
-        /// </summary>
-        /// <remarks>
-        /// Campo generato automaticamente.
-        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox BiografiaAutore;
-
-        /// <summary>
-        /// Controllo FileUploadAutore.
-        /// </summary>
-        /// <remarks>
-        /// Campo generato automaticamente.
-        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload FileUploadAutore;
-
-        /// <summary>
-        /// Controllo NascitaAutore.
-        /// </summary>
-        /// <remarks>
-        /// Campo generato automaticamente.
-        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox NascitaAutore;
-
-        /// <summary>
-        /// Controllo MorteAutore.
-        /// </summary>
-        /// <remarks>
-        /// Campo generato automaticamente.
-        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox MorteAutore;
-
-        /// <summary>
-        /// Controllo CorrenteAutore.
-        /// </summary>
-        /// <remarks>
-        /// Campo generato automaticamente.
-        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox CorrenteAutore;
-
-        /// <summary>
-        /// Controllo AggiungiAutore.
-        /// </summary>
-        /// <remarks>
-        /// Campo generato automaticamente.
-        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button AggiungiAutore;
-
-        /// <summary>
-        /// Controllo AddGenere.
-        /// </summary>
-        /// <remarks>
-        /// Campo generato automaticamente.
-        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox AddGenere;
-
-        /// <summary>
-        /// Controllo AggiungiGenere.
-        /// </summary>
-        /// <remarks>
-        /// Campo generato automaticamente.
-        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button AggiungiGenere;
-
-        /// <summary>
-        /// Controllo AddEditore.
-        /// </summary>
-        /// <remarks>
-        /// Campo generato automaticamente.
-        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox AddEditore;
-
-        /// <summary>
-        /// Controllo AggiungiEditore.
-        /// </summary>
-        /// <remarks>
-        /// Campo generato automaticamente.
-        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button AggiungiEditore;
+        protected global::System.Web.UI.WebControls.Button Elimina;
     }
 }

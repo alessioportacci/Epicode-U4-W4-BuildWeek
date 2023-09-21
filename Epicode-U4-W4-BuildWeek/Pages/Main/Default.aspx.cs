@@ -39,6 +39,7 @@ namespace Epicode_U4_W4_BuildWeek.Pages.Main
                 book.Anno = sqlDataReader["Anno"].ToString();
                 book.Prezzo = sqlDataReader["Prezzo"].ToString();
                 book.Autore = sqlDataReader["NomeAutore"].ToString();
+                book.IdGenere = Int32.Parse(sqlDataReader["IdGenere"].ToString());
                 book.Genere = sqlDataReader["Genere"].ToString();
                 book.Editore = sqlDataReader["NomeEditore"].ToString();
 
@@ -48,12 +49,14 @@ namespace Epicode_U4_W4_BuildWeek.Pages.Main
             Repeater1.DataSource = listalibri;
             Repeater1.DataBind();
 
+            RepeaterBestSellers.DataSource = listalibri.OrderBy(x => rnd.Next()).Take(6);
+            RepeaterBestSellers.DataBind();
+
             conn.Close();
 
-
-            fillCarosello(listalibri);
-            fillInEvidenza(listalibri);
             fillConsigliati(listalibri, conn);
+            fillInEvidenza(listalibri);
+            fillCarosello(listalibri);
 
         }
 
@@ -96,17 +99,70 @@ namespace Epicode_U4_W4_BuildWeek.Pages.Main
 
         protected void fillConsigliati(List<Libri> libriList, SqlConnection conn)
         {
-            //Mi prendo due generi a caso
+            //Mi la lista dei generi
+            List<String> generi = new List<string>();
             SqlCommand cmd = new SqlCommand("select * from T_Generi", conn);
             SqlDataReader sqlDataReader;
-
             conn.Open();
-
-            List<String> generi = new List<string >();
             sqlDataReader = cmd.ExecuteReader();
-
             while (sqlDataReader.Read())
-                generi.Add(sqlDataReader["Genere"].ToString());
+                generi.Add(sqlDataReader["IDGenere"].ToString());
+
+            //Prima selezione
+            int index = rnd.Next(generi.Count);
+            index = index == 0 ? 1 : index;
+
+            List<Libri> libriAppoggio = libriList.Where(gen => gen.IdGenere == index).ToList();
+
+            //Primi 3
+
+            boxSuperTitle1.InnerText = "Consigli " + libriAppoggio[0].Genere;
+
+            boxImg1.Src = "../../Content/img/Libri/" + libriAppoggio[0].Copertina;
+            boxAuthor1.InnerText = libriAppoggio[0].Autore;
+            boxTitle1.InnerText = libriAppoggio[0].Titolo;
+            boxEditor1.InnerText = libriAppoggio[0].Editore;
+            boxUrl1.HRef = "Details?IdLibro=" + libriAppoggio[0].IDLibro;
+
+            boxImg2.Src = "../../Content/img/Libri/" + libriAppoggio[1].Copertina;
+            boxAuthor2.InnerText = libriAppoggio[1].Autore;
+            boxTitle2.InnerText = libriAppoggio[1].Titolo;
+            boxEditor2.InnerText = libriAppoggio[1].Editore;
+            boxUrl2.HRef = "Details?IdLibro=" + libriAppoggio[1].IDLibro;
+
+            boxImg3.Src = "../../Content/img/Libri/" + libriAppoggio[2].Copertina;
+            boxAuthor3.InnerText = libriAppoggio[2].Autore;
+            boxTitle3.InnerText = libriAppoggio[2].Titolo;
+            boxEditor3.InnerText = libriAppoggio[2].Editore;
+            boxUrl3.HRef = "Details?IdLibro=" + libriAppoggio[2].IDLibro;
+
+            //Altri 3
+
+            int index2 = rnd.Next(generi.Count);
+            index2 = index2 == 0 || index2 == index ? 8 : index2;
+
+            libriAppoggio = libriList.Where(gen => gen.IdGenere == index2).ToList();
+
+            boxSuperTitle2.InnerText = "Consigli " + libriAppoggio[0].Genere;
+
+            boxImg4.Src = "../../Content/img/Libri/" + libriAppoggio[0].Copertina;
+            boxAuthor4.InnerText = libriAppoggio[0].Autore;
+            boxTitle4.InnerText = libriAppoggio[0].Titolo;
+            boxEditor4.InnerText = libriAppoggio[0].Editore;
+            boxUrl4.HRef = "Details?IdLibro=" + libriAppoggio[0].IDLibro;
+
+            boxImg5.Src = "../../Content/img/Libri/" + libriAppoggio[1].Copertina;
+            boxAuthor5.InnerText = libriAppoggio[1].Autore;
+            boxTitle5.InnerText = libriAppoggio[1].Titolo;
+            boxEditor5.InnerText = libriAppoggio[1].Editore;
+            boxUrl5.HRef = "Details?IdLibro=" + libriAppoggio[1].IDLibro;
+
+            boxImg6.Src = "../../Content/img/Libri/" + libriAppoggio[2].Copertina;
+            boxAuthor6.InnerText = libriAppoggio[2].Autore;
+            boxTitle6.InnerText = libriAppoggio[2].Titolo;
+            boxEditor6.InnerText = libriAppoggio[2].Editore;
+            boxUrl6.HRef = "Details?IdLibro=" + libriAppoggio[2].IDLibro;
+
 
             conn.Close();
         }

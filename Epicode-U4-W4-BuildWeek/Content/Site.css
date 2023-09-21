@@ -59,7 +59,8 @@ textarea {
 
 .card-home
 {
-    border:none !important
+    border:none !important;
+    height: 100% !important;
 }
 
 .libro-redirect
@@ -90,6 +91,13 @@ textarea {
     background-color: #c0cefd;
 }
 
+.nav-bg-black {
+    background-color: #2d2d2d;
+    color: white;
+    position: sticky;
+    top: 1px
+}
+
 .in-evidenza-text 
 {
     font-size:14px
@@ -107,4 +115,34 @@ textarea {
 {
     top:20px
 
+}
+
+.title-text {
+    padding: 30px 20px 10px;
+    position: relative;
+}
+
+.title-text::before {
+    content: "";
+    position: absolute;
+    left: 8%;
+    bottom: 10px;
+    width: 150px;
+    height: 11px;
+    transform: skew(-15deg) translateX(-50%);
+    background: #d4d8da;
+    z-index: -1;
+    box-shadow: 5px 5px 14px -8px rgba(0,0,0,0.6);
+}
+
+.text-bibliotu {
+    color: #9ae2d5 !important
+}
+
+i.bi-basket2-fill {
+    color: #9ae2d5 !important
+}
+
+.btn-outline-success, .btn-outline-success:hover, .btn-outline-success:active, .btn-outline-success:visited {
+    background-color: #9ae2d5 !important;
 }

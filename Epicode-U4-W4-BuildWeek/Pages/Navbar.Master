@@ -21,26 +21,28 @@
 <body>
 
     <%-- navbar --%>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top nav-bg-black">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a id="nav-home" class="navbar-brand text-white" href="Default.aspx" >
+                    <img src="../../../Content/img/LogoBiblio.png" height=20  onerror="this.onerror=null; this.src='../../Content/img/LogoBiblio.png'"/>
+                BiblioTu
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="Default.aspx">Home</a>
+                        <a id="nav-admin" class="nav-link active text-white" aria-current="page" href="Admin/Admin.aspx">Admin</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="Admin/Admin.aspx">Admin</a>
-                    </li>
-                    
-
-
                 </ul>
-                <a class="mx-3 fs-3 text-success" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-                    <i class="bi bi-basket2-fill"></i>
+
+                <a class="text-bibliotu" id="nav-storico" href="Storico.aspx" >
+                    <i class="text-bibliotu bi bi-person-circle fs-4  ms-3"></i>
+                </a>
+
+                <a class="mx-3 fs-3 text-biblou" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                    <i style="color: #9ae2d5 !important" class="bi bi-basket2-fill"></i>
                 </a>
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -127,5 +129,14 @@
     </form>
 
     <script src="../Scripts/bootstrap.min.js"></script>
+    <script>
+        if (window.location.href.includes("Admin"))
+        {
+            document.getElementById("nav-home").href = "../Default.aspx"
+            document.getElementById("nav-storico").href = "../Storico.aspx"
+            document.getElementById("nav-admin").href = "Admin.aspx"
+        }
+    </script>
+
 </body>
 </html>
