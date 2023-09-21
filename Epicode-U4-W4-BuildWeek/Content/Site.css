@@ -147,9 +147,46 @@ i.bi-basket2-fill {
     background-color: #9ae2d5 !important;
 }
 
-.libro-top-copertina {
-    background-repeat: no-repeat;
-    background-size: cover;
-    filter:blur(8px);
-    padding:0px !important
+.borderTop 
+{
+    border-top: 1px solid RGB(211,211,211);
+}
+}
+
+
+card12 {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card12 img {
+    max-width: 100%;
+}
+
+.card12 p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.card12 button {
+    margin-top: auto;
+}
+
+.login-container {
+    width: 50%;
+    margin-top: 20em;
+    max-width: 40em
 }
