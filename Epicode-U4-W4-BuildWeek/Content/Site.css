@@ -146,3 +146,10 @@ i.bi-basket2-fill {
 .btn-outline-success, .btn-outline-success:hover, .btn-outline-success:active, .btn-outline-success:visited {
     background-color: #9ae2d5 !important;
 }
+
+.libro-top-copertina {
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter:blur(8px);
+    padding:0px !important
+}
