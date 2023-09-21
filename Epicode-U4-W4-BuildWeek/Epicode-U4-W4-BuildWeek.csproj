@@ -157,6 +157,7 @@
     <Content Include="Pages\Main\Ordine.aspx" />
     <Content Include="Pages\Main\Default.aspx" />
     <Content Include="Pages\Main\Details.aspx" />
+    <Content Include="Pages\Main\Storico.aspx" />
     <Content Include="Pages\Registrati.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -277,6 +278,13 @@
     </Compile>
     <Compile Include="Pages\Main\Details.aspx.designer.cs">
       <DependentUpon>Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Main\Storico.aspx.cs">
+      <DependentUpon>Storico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Main\Storico.aspx.designer.cs">
+      <DependentUpon>Storico.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Navbar.Master.cs">
       <DependentUpon>Navbar.Master</DependentUpon>
