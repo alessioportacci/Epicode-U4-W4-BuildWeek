@@ -130,7 +130,7 @@
     </form>
 
 
-    <footer>
+    <footer id="footer">
         <div class="container-fluid borderTop mt-5 nav-bg-black text-white">
             <!--<div class="row w-75 mx-auto d-flex">-->
             <div class="row d-flex">
