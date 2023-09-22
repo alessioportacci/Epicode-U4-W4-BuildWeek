@@ -105,9 +105,7 @@ namespace Epicode_U4_W4_BuildWeek.Pages.Main.Admin
                 cmd.Parameters.AddWithValue("Editore", Int32.Parse(Editori.SelectedItem.Value));
 
                 int inserimentoEffettuato = cmd.ExecuteNonQuery();
-                if (inserimentoEffettuato > 0)
-                    Response.Write("Inserimento effettuato con successo");
-                else
+                if (inserimentoEffettuato != 0)
                     Response.Write("Errore nell'inserimento");
             }
             catch 
