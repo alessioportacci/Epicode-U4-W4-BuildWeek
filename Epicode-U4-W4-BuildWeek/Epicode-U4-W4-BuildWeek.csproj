@@ -208,6 +208,7 @@
     <Content Include="Content\img\Libri\Vermeer.jpg" />
     <Content Include="Content\img\Libri\Vermeer2.jpg" />
     <Content Include="Content\img\LogoBiblio.png" />
+    <Content Include="Content\img\LogoBrowser.png" />
     <Content Include="Content\Site.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />

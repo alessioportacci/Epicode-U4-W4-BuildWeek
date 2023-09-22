@@ -15,6 +15,24 @@ namespace Epicode_U4_W4_BuildWeek.Pages.Main
     {
 
         /// <summary>
+        /// Controllo titololibrotop.
+        /// </summary>
+        /// <remarks>
+        /// Campo generato automaticamente.
+        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl titololibrotop;
+
+        /// <summary>
+        /// Controllo autorelibrotop.
+        /// </summary>
+        /// <remarks>
+        /// Campo generato automaticamente.
+        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl autorelibrotop;
+
+        /// <summary>
         /// Controllo ImgSfondo.
         /// </summary>
         /// <remarks>
@@ -42,15 +60,6 @@ namespace Epicode_U4_W4_BuildWeek.Pages.Main
         protected global::System.Web.UI.HtmlControls.HtmlImage DetailsImgR;
 
         /// <summary>
-        /// Controllo Author.
-        /// </summary>
-        /// <remarks>
-        /// Campo generato automaticamente.
-        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Author;
-
-        /// <summary>
         /// Controllo DetailsTitle.
         /// </summary>
         /// <remarks>
@@ -60,6 +69,15 @@ namespace Epicode_U4_W4_BuildWeek.Pages.Main
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl DetailsTitle;
 
         /// <summary>
+        /// Controllo Author.
+        /// </summary>
+        /// <remarks>
+        /// Campo generato automaticamente.
+        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Author;
+
+        /// <summary>
         /// Controllo Publisher.
         /// </summary>
         /// <remarks>
@@ -67,6 +85,15 @@ namespace Epicode_U4_W4_BuildWeek.Pages.Main
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl Publisher;
+
+        /// <summary>
+        /// Controllo DetailsPrice.
+        /// </summary>
+        /// <remarks>
+        /// Campo generato automaticamente.
+        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl DetailsPrice;
 
         /// <summary>
         /// Controllo CarrelloButton.
@@ -85,6 +112,15 @@ namespace Epicode_U4_W4_BuildWeek.Pages.Main
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox Quantita;
+
+        /// <summary>
+        /// Controllo DetailsAuthor.
+        /// </summary>
+        /// <remarks>
+        /// Campo generato automaticamente.
+        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl DetailsAuthor;
 
         /// <summary>
         /// Controllo DetailsGenre.
@@ -121,5 +157,32 @@ namespace Epicode_U4_W4_BuildWeek.Pages.Main
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl DetailsPublisher;
+
+        /// <summary>
+        /// Controllo AutoreDescImg.
+        /// </summary>
+        /// <remarks>
+        /// Campo generato automaticamente.
+        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlImage AutoreDescImg;
+
+        /// <summary>
+        /// Controllo AutoreDescNome.
+        /// </summary>
+        /// <remarks>
+        /// Campo generato automaticamente.
+        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl AutoreDescNome;
+
+        /// <summary>
+        /// Controllo AutoreDescBio.
+        /// </summary>
+        /// <remarks>
+        /// Campo generato automaticamente.
+        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl AutoreDescBio;
     }
 }

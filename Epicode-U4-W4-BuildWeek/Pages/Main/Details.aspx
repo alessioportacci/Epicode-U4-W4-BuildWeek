@@ -3,59 +3,95 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <div style="height:35em" class="mb-5">
+
+    <div class=" position-absolute row row-cols-1 m-5 d-none d-md-block"  style="z-index:5">
+        <h1 id="titololibrotop" class="titolo-libro text-truncate" runat="server"> TESTO LIBRO</h1>
+        <h3 class="autore-libro mx-4" id="autorelibrotop" runat="server"> AUTORE</h3>
+    </div>
+
+
+    <div style="height:35em" class="mb-5 d-none d-md-block">
         <div id="ImgSfondo" runat="server" class="container-fluid h-100 libro-top-copertina">
         </div>
     </div>
 
 
-
     <div class="container">
         <div class="row d-flex flex-row justify-content-evenly">
-            <div class="col col-12 col-md-4 me-5">
+            <!-- Blocco di sinistra -->
+            <div class="col col-12 col-md-4 mt-4 mt-md-0 m-auto">
                 <div class="card border-0" style="background-color: #adb5bd4a">
 
-                    <div id="carouselExample" class="carousel slide p-5">
+                    <!-- Carosello -->
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <!-- Contenuto carosello -->
+                        <div class="carousel-inner home-carosello-top">
+                            
+                            <!-- Copertina -->
+                            <div class="carousel-item active carosello-content" style="">
+                              <div class="m-2">
+                                    <img id="DetailsImg" runat="server" height="5" src="..." class="img-thumbnail mx-auto d-block carosello-img shadow" alt="...">
+                              </div>
+                            </div>
 
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="..." class="d-block w-100" alt="..." id="DetailsImg" runat="server">
+                            <!-- Retro -->
+                            <div class="carousel-item carosello-content" style="">
+                              <div class="my-2">
+                                    <img id="DetailsImgR" runat="server" height="5" src="..." class="img-thumbnail mx-auto d-block carosello-img shadow" alt="...">
+                              </div>
                             </div>
-                            <div class="carousel-item">
-                                <img src="..." class="d-block w-100" alt="..." id="DetailsImgR" runat="server">
-                            </div>
+
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+
+                        <!-- Pulsante indietro -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
+                        <!-- Pulsante avanti -->
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
                         </button>
                     </div>
 
-                    <div class="card-body d-flex flex-column align-content-center flex-wrap">
-                        <p id="Author" runat="server"></p>
+                    <!-- Testo in basso -->
+                    <div class="card-body d-flex flex-column align-content-center flex-wrap m-2">
                         <h5 class="card-title" id="DetailsTitle" runat="server"></h5>
-                        <p class="card-text" id="Publisher" runat="server"></p>
+                        <div class="row row-cols-2">
+                            <div>                        
+                                <p id="Author" runat="server" class="m-0 text-secondary"></p>
+                                <p class="card-text p-0 m-0 text-secondary" id="Publisher" runat="server"></p>
+                            </div>
+                            <div>
+                                <p class="card-text p-0 m-0 fw-bold" id="DetailsPrice" runat="server"></p>
+                            </div>
 
-                        <div class="d-flex align-items-center" >
+                        </div>
+
+
+                        <div class="d-flex align-items-center justify-content-center" >
                             <asp:Button ID="CarrelloButton" runat="server" Text="Aggiungi al carrello" CssClass="btn btn-outline-success d-inline Aggiungi-carrello-button"  OnClick="ButtonAgg_Click" />
                             <asp:TextBox ID="Quantita" CssClass="Quantita-button form-control w-25 d-inline " runat="server" type="number" Text="1"></asp:TextBox>
                         </div>
+
 
                     </div>
 
                 </div>
             </div>
-            <div class="col col-12 col-md-4 flex-grow-1 gx-2 ms-3">
+
+            <!-- Blocco di destra -->
+            <div class="col col-12 col-md-4 mt-4 mt-md-0 flex-grow-1 gx-2 ms-3">
                 <div class="" style="">
-                    <h5 id="DetailsAuthor" runat="server" class="text-decoration-underline text mb-3">.</h5>
-                    <h5 id="DetailsGenre" runat="server" class="mb-5"></h5>
+                    <a href="#SectionAutore" class="text-black">
+                        <h5 id="DetailsAuthor"  runat="server" class="text-decoration-underline text mb-3">.</h5>
+                    </a>
+                    
+                    <h5 id="DetailsGenre" runat="server" class="mb-3"></h5>
 
-
-                    <div class="border border-bottom-3 border-end-0 border-start-0 border-top-0 border-dark-subtle pb-5 mb-3">
+                    <!-- Condividi -->
+                    <div class="border border-bottom-3 border-end-0 border-start-0 border-top-0 border-dark-subtle pb-1 mb-3">
                         <span class="text-secondary">Condividi</span>
                         <a href="https://it-it.facebook.com/"><i class="bi bi-facebook" style="color: #9ae2d5 !important"></i></a>
                         <a href="https://twitter.com/search"><i class="bi bi-twitter" style="color: #9ae2d5 !important"></i></a>
@@ -64,8 +100,10 @@
                         <a href="https://mail.google.com/mail?hl=it"><i class="bi bi-envelope-heart-fill" style="color: #9ae2d5 !important"></i></a>
                     </div>
 
+                    <!-- Info libro -->
                     <h3 id="Title2" runat="server"></h3>
-                    <p id="DetailsDescription" class="" runat="server"><small class="text-body-secondary"></small></p>
+                    <p id="DetailsDescription" class="" runat="server" style="overflow-y: scroll; height:300px;">
+                        <small class="text-body-secondary"></small></p>
                     <h4 id="DetailsPublisher" class="" runat="server"></h4>
 
                 </div>
@@ -74,8 +112,20 @@
 
     </div>
 
-    <div class="container-fluid h-50" style="background-color: #adb5bd4a">
-        <p>Foto autore</p>
+    <hr class="mt-5 pt-2"/>
+
+    <!-- Sezione Autore -->
+    <div id="SectionAutore" class="container-fluid mt-5 py-2 bg-gray">
+        <div class="row">
+            <div class="col-3">
+                <img id="AutoreDescImg" runat="server" src="..." class=" h-100 img-thumbnail"/>
+            </div>
+            <div class="col-9">
+                <h3 id="AutoreDescNome" runat="server"></h3>
+                <p id="AutoreDescBio" runat="server"></p>
+            </div>
+        </div>
+        
     </div>
         
 </asp:Content>

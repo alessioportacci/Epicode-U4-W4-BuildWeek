@@ -8,7 +8,9 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
     <link href="../Content/bootstrap.min.css" rel="stylesheet" />
-     <link href="../Content/site.css" rel="stylesheet" />
+    <link href="../Content/site.css" rel="stylesheet" />
+    <link rel="icon" href="../Content/img/LogoBrowser.png"/>
+
 
       <style>
     

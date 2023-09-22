@@ -40,20 +40,28 @@ namespace Epicode_U4_W4_BuildWeek.Pages.Main
                         string TitoloLibro = sqlDataReader["Titolo"].ToString();
                         string DescrizioneLibro = sqlDataReader["Descrizione"].ToString();
                         string AnnoPubblicazione = sqlDataReader["Anno"].ToString();
-                        string PrezzoLibro = sqlDataReader["Prezzo"].ToString();
+                        string PrezzoLibro = Double.Parse(sqlDataReader["Prezzo"].ToString()).ToString("C000");
                         string AutoreLibro = sqlDataReader["NomeAutore"].ToString();
                         string GenereLibro = sqlDataReader["Genere"].ToString();
                         string EditoreLibro = sqlDataReader["NomeEditore"].ToString();
-                        
+                        string FotoAutore = sqlDataReader["Foto"].ToString();
+                        string BiografiaAutore = sqlDataReader["Biografia"].ToString();
+
                         DetailsTitle.InnerText = TitoloLibro;
+                        titololibrotop.InnerText = TitoloLibro;
+                        autorelibrotop.InnerText = AutoreLibro;
                         //DetailsDate.InnerText = AnnoPubblicazione;
                         DetailsGenre.InnerText = GenereLibro;
+                        DetailsPrice.InnerText = PrezzoLibro;
                         DetailsDescription.InnerText = DescrizioneLibro;
                         DetailsAuthor.InnerText = AutoreLibro;
                         Title2.InnerText = TitoloLibro;
                         Author.InnerText = AutoreLibro;
                         Publisher.InnerText = EditoreLibro;
 
+                        AutoreDescNome.InnerText = AutoreLibro;
+                        AutoreDescImg.Src= "../../Content/img/Autori/" + FotoAutore;
+                        AutoreDescBio.InnerText = BiografiaAutore;
 
                         break;
                     }
