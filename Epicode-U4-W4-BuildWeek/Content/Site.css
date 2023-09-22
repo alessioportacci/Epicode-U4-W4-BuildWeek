@@ -50,7 +50,6 @@ textarea {
 {
     width:auto;
     border-bottom: 1px solid RGB(211,211,211);
-;
 }
 
 .shadow {
@@ -151,7 +150,6 @@ i.bi-basket2-fill {
 {
     border-top: 1px solid RGB(211,211,211);
 }
-}
 
 
 card12 {
@@ -196,4 +194,15 @@ card12 {
     background-size: cover;
     filter: blur(8px);
     padding: 0px !important
+}
+
+.Quantita-button
+{
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important
+}
+
+.Aggiungi-carrello-button {
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important
 }
