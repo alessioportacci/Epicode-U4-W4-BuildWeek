@@ -20,7 +20,7 @@
         <div class="row d-flex flex-row justify-content-evenly">
             <!-- Blocco di sinistra -->
             <div class="col col-12 col-md-4 mt-4 mt-md-0 m-auto">
-                <div class="card border-0" style="background-color: #adb5bd4a">
+                <div class="card border-0 shadow" style="background-color: #adb5bd4a">
 
                     <!-- Carosello -->
                     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -115,10 +115,10 @@
     <hr class="mt-5 pt-2"/>
 
     <!-- Sezione Autore -->
-    <div id="SectionAutore" class="container-fluid mt-5 py-2 bg-gray">
+    <div id="SectionAutore" class="container-fluid mt-5 py-2 bg-gray shadow">
         <div class="row">
             <div class="col-3">
-                <img id="AutoreDescImg" runat="server" src="..." class=" h-100 img-thumbnail"/>
+                <img id="AutoreDescImg" runat="server" src="..." class="h-100 img-thumbnail"/>
             </div>
             <div class="col-9">
                 <h3 id="AutoreDescNome" runat="server"></h3>
