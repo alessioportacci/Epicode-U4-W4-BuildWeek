@@ -40,7 +40,10 @@
                         <h5 class="card-title" id="DetailsTitle" runat="server"></h5>
                         <p class="card-text" id="Publisher" runat="server"></p>
 
-                        <asp:Button ID="CarrelloButton" runat="server" Text="Aggiungi al carrello" CssClass="btn btn-outline-success" OnClick="ButtonAgg_Click" />
+                        <div class="d-flex align-items-center" >
+                            <asp:Button ID="CarrelloButton" runat="server" Text="Aggiungi al carrello" CssClass="btn btn-outline-success d-inline Aggiungi-carrello-button"  OnClick="ButtonAgg_Click" />
+                            <asp:TextBox ID="Quantita" CssClass="Quantita-button form-control w-25 d-inline " runat="server" type="number" Text="1"></asp:TextBox>
+                        </div>
 
                     </div>
 

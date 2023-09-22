@@ -339,11 +339,6 @@ namespace Epicode_U4_W4_BuildWeek.Pages
             }
         }
 
-        protected void logout(object sender, EventArgs e)
-        {
-            string a = "ciao";
-        }
-
         public class Prodotto
         {
             public string Titolo { get; set; }

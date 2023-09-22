@@ -159,7 +159,7 @@
                 <div class="row row-cols-3 justify-content-center p-3">
                     <!-- 1 -->
                     <div class="p-1">
-                        <div class="card card-home  mx-auto" style="width: 10rem;">
+                        <div class="card card-home  mx-auto imgConsigliato" style="width: 10rem;">
                             <img id="boxImg1" runat="server" src="../../Content/img/Libri/Dracula.jpg" class="card-img-top" alt="avatar" height="230">
                             <div class="card-body">
                                 <p id="boxAuthor1" runat="server" class="text-truncate text-secondary m-0">Fracula</p>
@@ -175,7 +175,7 @@
                     </div>
                     <!-- 2 -->
                     <div class="p-1">
-                        <div class="card card-home  mx-auto" style="width: 10rem;">
+                        <div class="card card-home imgConsigliato mx-auto" style="width: 10rem;">
                             <img id="boxImg2" runat="server" src="../../Content/img/Libri/Dracula.jpg" class="card-img-top" alt="avatar" height="230">
                             <div class="card-body">
                                 <p id="boxAuthor2" runat="server" class="text-truncate text-secondary m-0">Fracula</p>
@@ -191,7 +191,7 @@
                     </div>
                     <!-- 3 -->
                     <div class="p-1">
-                        <div class="card card-home  mx-auto" style="width: 10rem;">
+                        <div class="card card-home imgConsigliato mx-auto" style="width: 10rem;">
                             <img id="boxImg3" runat="server" src="../../Content/img/Libri/Dracula.jpg" class="card-img-top" alt="avatar" height="230">
                             <div class="card-body">
                                 <p id="boxAuthor3" runat="server" class="text-truncate text-secondary m-0">Fracula</p>
@@ -217,7 +217,7 @@
                 <div class="row row-cols-3 justify-content-center p-3">
                     <!-- 4 -->
                     <div class="p-1">
-                        <div class="card card-home  mx-auto" style="width: 10rem;">
+                        <div class="card card-home imgConsigliato mx-auto" style="width: 10rem;">
                             <img id="boxImg4" runat="server" src="../../Content/img/Libri/Dracula.jpg" class="card-img-top" alt="avatar" height="230">
                             <div class="card-body">
                                 <p id="boxAuthor4" runat="server" class="text-truncate text-secondary m-0">Fracula</p>
@@ -233,7 +233,7 @@
                     </div>
                     <!-- 5 -->
                     <div class="p-1">
-                        <div class="card card-home  mx-auto" style="width: 10rem;">
+                        <div class="card card-home imgConsigliato mx-auto" style="width: 10rem;">
                             <img id="boxImg5" runat="server" src="../../Content/img/Libri/Dracula.jpg" class="card-img-top" alt="avatar" height="230">
                             <div class="card-body">
                                 <p id="boxAuthor5" runat="server" class="text-truncate text-secondary m-0">Fracula</p>
@@ -249,7 +249,7 @@
                     </div>
                     <!-- 6 -->
                     <div class="p-1">
-                        <div class="card card-home  mx-auto" style="width: 10rem;">
+                        <div class="card card-home imgConsigliato mx-auto" style="width: 10rem;">
                             <img id="boxImg6" runat="server" src="../../Content/img/Libri/Dracula.jpg" class="card-img-top" alt="avatar" height="230">
                             <div class="card-body">
                                 <p id="boxAuthor6" runat="server" class="text-truncate text-secondary m-0">Fracula</p>
