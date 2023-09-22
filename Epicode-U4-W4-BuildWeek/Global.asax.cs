@@ -22,7 +22,7 @@ namespace Epicode_U4_W4_BuildWeek
 
         protected void Session_Start(object sender, EventArgs e)
         {
-
+            Session.Timeout = 100;
         }
 
         protected void Application_BeginRequest(object sender, EventArgs e)

@@ -118,7 +118,7 @@
     <div id="SectionAutore" class="container-fluid mt-5 py-2 bg-gray">
         <div class="row">
             <div class="col-3">
-                <img id="AutoreDescImg" runat="server" src="..." class=" h-auto img-thumbnail"/>
+                <img id="AutoreDescImg" runat="server" src="..." class=" h-100 img-thumbnail"/>
             </div>
             <div class="col-9">
                 <h3 id="AutoreDescNome" runat="server"></h3>
