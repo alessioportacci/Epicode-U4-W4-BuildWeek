@@ -43,7 +43,8 @@ namespace Epicode_U4_W4_BuildWeek.Pages.Main
                     double prezzo = Convert.ToDouble(reader["Prezzo"]);
                     string img = reader["Copertina"].ToString();
                     int idProdotto = Convert.ToInt32(reader["IDLibro"]);
-                    StoricoProdotti storicoProdotti = new StoricoProdotti { Titolo = titolo, Prezzo = prezzo, Img = img, IDProdotto = idProdotto };
+                    DateTime acquisto = Convert.ToDateTime(reader["DataAcquisto"]);
+                    StoricoProdotti storicoProdotti = new StoricoProdotti { Titolo = titolo, Prezzo = prezzo, Img = img, IDProdotto = idProdotto, DataAcquisto = acquisto };
                     listaStorico.Add(storicoProdotti);
 
 
@@ -72,7 +73,7 @@ namespace Epicode_U4_W4_BuildWeek.Pages.Main
 
             public int IDProdotto { get; set; }
 
-            
+            public DateTime DataAcquisto { get; set; }
         }
     }
 

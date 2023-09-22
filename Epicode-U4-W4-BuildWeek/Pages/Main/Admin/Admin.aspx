@@ -2,6 +2,9 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
+    <h1 class="m-3 mb-4">Modifica prodotti</h1>
+
     <div class="row row-cols-2 row-cols-md-4 row-cols-lg-6 justify-content-center">
          <asp:Repeater ID="Repeater2" runat="server" ItemType="Epicode_U4_W4_BuildWeek.Classes.Libri"  >
               <ItemTemplate>

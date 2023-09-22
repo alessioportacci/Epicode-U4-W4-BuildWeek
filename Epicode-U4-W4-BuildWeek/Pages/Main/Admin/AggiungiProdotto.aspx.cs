@@ -76,10 +76,10 @@ namespace Epicode_U4_W4_BuildWeek.Pages.Main.Admin
         }
 
 
-        private string uploadFile()
+        private string uploadFile(string add)
         {
             if (FileUpload.HasFile)
-                FileUpload.SaveAs(Server.MapPath($"../../../Content/img/{FileUpload.FileName}"));
+                FileUpload.SaveAs(Server.MapPath($"../../../Content/img/Libri/{FileUpload.FileName + add}"));
             return FileUpload.FileName;
         }
 
@@ -93,9 +93,10 @@ namespace Epicode_U4_W4_BuildWeek.Pages.Main.Admin
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = conn;
 
-                cmd.CommandText = "INSERT INTO T_Libri VALUES(@Titolo, @Copertina, @Descrizione, @Anno, @Prezzo, @Autore, @Genere, @Editore)";
+                cmd.CommandText = "INSERT INTO T_Libri VALUES(@Titolo, @Copertina, @Retro, @Descrizione, @Anno, @Prezzo, @Autore, @Genere, @Editore)";
                 cmd.Parameters.AddWithValue("Titolo", Titolo.Text);
-                cmd.Parameters.AddWithValue("Copertina", uploadFile());
+                cmd.Parameters.AddWithValue("Copertina", uploadFile(""));
+                cmd.Parameters.AddWithValue("Retro", uploadFile("2"));
                 cmd.Parameters.AddWithValue("Descrizione", Descrizione.Text);
                 cmd.Parameters.AddWithValue("Anno", Anno.Text);
                 cmd.Parameters.AddWithValue("Prezzo", Double.Parse(Prezzo.Text));
@@ -132,7 +133,7 @@ namespace Epicode_U4_W4_BuildWeek.Pages.Main.Admin
                 cmd.CommandText = "INSERT INTO T_Autori VALUES(@Nome, @Biografia, @Foto, @Nascita, @Morte, @Corrente)";
                 cmd.Parameters.AddWithValue("Nome", NomeAutore.Text);
                 cmd.Parameters.AddWithValue("Biografia", Descrizione.Text);
-                cmd.Parameters.AddWithValue("Foto", uploadFile());
+                cmd.Parameters.AddWithValue("Foto", uploadFile(""));
                 cmd.Parameters.AddWithValue("Nascita", NascitaAutore.Text);
                 cmd.Parameters.AddWithValue("Morte", MorteAutore.Text);
                 cmd.Parameters.AddWithValue("Corrente", CorrenteAutore.Text);

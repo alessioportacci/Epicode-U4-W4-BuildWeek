@@ -1,4 +1,10 @@
-﻿/* Wrapping element */
+﻿@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif !important;
+}
+
+/* Wrapping element */
 /* Set some basic padding to keep content from hitting the edges */
 .body-content {
     margin-top: 15px;
@@ -50,7 +56,6 @@ textarea {
 {
     width:auto;
     border-bottom: 1px solid RGB(211,211,211);
-;
 }
 
 .shadow {
@@ -151,7 +156,6 @@ i.bi-basket2-fill {
 {
     border-top: 1px solid RGB(211,211,211);
 }
-}
 
 
 card12 {
@@ -187,7 +191,7 @@ card12 {
 
 .login-container {
     width: 50%;
-    margin-top: 20em;
+    margin-top: 20vh;
     max-width: 40em
 }
 
@@ -198,6 +202,13 @@ card12 {
     padding: 0px !important
 }
 
-.bi {
-    color: #9ae2d5 !important
+.Quantita-button
+{
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important
+}
+
+.Aggiungi-carrello-button {
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important
 }

@@ -55,7 +55,6 @@ namespace Epicode_U4_W4_BuildWeek.Pages.Main
                         Publisher.InnerText = EditoreLibro;
 
 
-
                         break;
                     }
                 }
@@ -89,7 +88,11 @@ namespace Epicode_U4_W4_BuildWeek.Pages.Main
                 cmd.Parameters.AddWithValue("FKUtente", userId);
                 cmd.Parameters.AddWithValue("FKLibro", Request.QueryString["IDLibro"]);
 
-                cmd.ExecuteNonQuery();
+                if (Quantita.Text == "") 
+                    Quantita.Text = "0";
+
+                for(int i=0; i < Int32.Parse(Quantita.Text); i++ )
+                    cmd.ExecuteNonQuery();
 
             }
 
