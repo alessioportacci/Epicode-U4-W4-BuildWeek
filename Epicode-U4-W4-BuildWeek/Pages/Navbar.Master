@@ -114,7 +114,7 @@
 
                 <asp:Button ID="btnSvuotaCarrello" runat="server" Text="Svuota Carrello" CssClass="btn btn-danger" OnClick="btnSvuotaCarrello_Click" />
 
-                <asp:Button ID="Button2" runat="server" Text="Concludi Ordine" CssClass="btn btn-success" OnClick="ConcludiOrdine" />
+                <asp:Button ID="Button2" runat="server" Text="Concludi Ordine" CssClass="btn btn-outline-success fw-bold" OnClick="ConcludiOrdine" />
             </div>
             <asp:Label ID="LabelIDCarrello" runat="server" Text=""></asp:Label>
 
