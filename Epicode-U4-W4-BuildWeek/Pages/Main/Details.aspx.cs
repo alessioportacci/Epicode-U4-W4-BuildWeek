@@ -96,7 +96,7 @@ namespace Epicode_U4_W4_BuildWeek.Pages.Main
             finally
             {
                 conn.Close();
-                //Page.Response.Redirect(Page.Request.Url.ToString(), true);
+                Page.Response.Redirect(Page.Request.Url.ToString(), true);
             }
 
         }
