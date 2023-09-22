@@ -42,6 +42,15 @@ namespace Epicode_U4_W4_BuildWeek.Pages.Main
         protected global::System.Web.UI.HtmlControls.HtmlImage DetailsImgR;
 
         /// <summary>
+        /// Controllo Author.
+        /// </summary>
+        /// <remarks>
+        /// Campo generato automaticamente.
+        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Author;
+
+        /// <summary>
         /// Controllo DetailsTitle.
         /// </summary>
         /// <remarks>
@@ -51,13 +60,13 @@ namespace Epicode_U4_W4_BuildWeek.Pages.Main
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl DetailsTitle;
 
         /// <summary>
-        /// Controllo DetailsDate.
+        /// Controllo Publisher.
         /// </summary>
         /// <remarks>
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl DetailsDate;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Publisher;
 
         /// <summary>
         /// Controllo CarrelloButton.
@@ -69,6 +78,15 @@ namespace Epicode_U4_W4_BuildWeek.Pages.Main
         protected global::System.Web.UI.WebControls.Button CarrelloButton;
 
         /// <summary>
+        /// Controllo DetailsAuthor.
+        /// </summary>
+        /// <remarks>
+        /// Campo generato automaticamente.
+        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl DetailsAuthor;
+
+        /// <summary>
         /// Controllo DetailsGenre.
         /// </summary>
         /// <remarks>
@@ -78,6 +96,15 @@ namespace Epicode_U4_W4_BuildWeek.Pages.Main
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl DetailsGenre;
 
         /// <summary>
+        /// Controllo Title2.
+        /// </summary>
+        /// <remarks>
+        /// Campo generato automaticamente.
+        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Title2;
+
+        /// <summary>
         /// Controllo DetailsDescription.
         /// </summary>
         /// <remarks>
@@ -85,15 +112,6 @@ namespace Epicode_U4_W4_BuildWeek.Pages.Main
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl DetailsDescription;
-
-        /// <summary>
-        /// Controllo DetailsAuthor.
-        /// </summary>
-        /// <remarks>
-        /// Campo generato automaticamente.
-        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl DetailsAuthor;
 
         /// <summary>
         /// Controllo DetailsPublisher.

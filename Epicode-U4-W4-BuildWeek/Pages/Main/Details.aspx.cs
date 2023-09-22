@@ -46,11 +46,14 @@ namespace Epicode_U4_W4_BuildWeek.Pages.Main
                         string EditoreLibro = sqlDataReader["NomeEditore"].ToString();
                         
                         DetailsTitle.InnerText = TitoloLibro;
-                        DetailsDate.InnerText = AnnoPubblicazione;
+                        //DetailsDate.InnerText = AnnoPubblicazione;
                         DetailsGenre.InnerText = GenereLibro;
                         DetailsDescription.InnerText = DescrizioneLibro;
                         DetailsAuthor.InnerText = AutoreLibro;
-                        DetailsPublisher.InnerText = EditoreLibro;
+                        Title2.InnerText = TitoloLibro;
+                        Author.InnerText = AutoreLibro;
+                        Publisher.InnerText = EditoreLibro;
+
 
 
                         break;
@@ -96,7 +99,7 @@ namespace Epicode_U4_W4_BuildWeek.Pages.Main
             finally
             {
                 conn.Close();
-                //Page.Response.Redirect(Page.Request.Url.ToString(), true);
+                Page.Response.Redirect(Page.Request.Url.ToString(), true);
             }
 
         }

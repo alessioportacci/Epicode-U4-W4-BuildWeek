@@ -197,3 +197,7 @@ card12 {
     filter: blur(8px);
     padding: 0px !important
 }
+
+.bi {
+    color: #9ae2d5 !important
+}
