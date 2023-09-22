@@ -130,7 +130,7 @@
     </form>
 
 
-    <footer>
+    <footer id="footer">
         <div class="container-fluid borderTop mt-5 ">
             <div class="row w-75 mx-auto">
 
@@ -165,6 +165,12 @@
             document.getElementById("nav-aggiungi").href ="AggiungiProdotto.aspx"
             document.getElementById("nav-login").href = "../../login.aspx"
         }
+         
+       if (window.location.href.includes("Ordine"))
+       {
+           document.getElementById("footer").classList.add("d-none")
+       } 
+ 
     </script>
 
 </body>
