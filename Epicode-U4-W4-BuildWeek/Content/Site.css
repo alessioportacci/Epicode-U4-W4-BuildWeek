@@ -85,7 +85,7 @@ textarea {
 }
 
 .bg-gray {
-    background-color: #edf0f2;
+    background-color: #edf0f2 !important;
 }
 
 .bg-sand {
@@ -211,4 +211,17 @@ card12 {
 .Aggiungi-carrello-button {
     border-top-right-radius: 0px !important;
     border-bottom-right-radius: 0px !important
+}
+
+.titolo-libro {
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    color: white;
+    font-size: 5em;
+    margin-top: 30vh !important;
+}
+
+.autore-libro {
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    color: white;
+    font-size: 2em;
 }

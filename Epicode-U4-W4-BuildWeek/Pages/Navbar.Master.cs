@@ -238,7 +238,16 @@ namespace Epicode_U4_W4_BuildWeek.Pages
         //Popola il carrello dinamicamente
         private void AggiornaCarrello() 
         {
-            string userId = Session["UserID"].ToString();
+
+            string userId = String.Empty;
+            try 
+            { 
+                userId = Session["UserID"].ToString();
+            }
+            catch
+            {
+                userId = "1";
+            }
 
             double totaleCarrello = 0;
 
