@@ -180,10 +180,7 @@
 
        if(window.location.href.includes("AggiungiProdotto"))
        {
-           document.getElementById("footer").classList.add("fixed-bottom");
            document.getElementById("footer").classList.add("d-none");
-           document.getElementById("footer").classList.add("d-md-block");
-
        }
  
     </script>
